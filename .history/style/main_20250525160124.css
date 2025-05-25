@@ -282,7 +282,7 @@ section {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* สำคัญ: 3 คอลัมน์ */
+  /* สำคัญ: 3 คอลัมน์ */
   gap: 40px;
   margin-top: 100px;
 }
@@ -640,41 +640,162 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
   }
 }
 /* 1 column on small screens (default) */
-
-
-
-/* ---- HERO LAYOUT FIX (desktop row, mobile column) ---- */
-.hero-content{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap:40px;
 }
 
-.hero-text{
-  flex:1 1 320px;
-}
 
-.hero-animation{
-  flex:1 1 320px;
-  max-width:440px;
-  margin-left:auto;
-}
-
+/* ========== MOBILE FIXES (<= 639px) ========== */
 @media (max-width: 639px){
+  /* Project cards: single column */
+  .card-grid--projects{
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Navbar: wrap to new line and shrink font */
+  .nav-right{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  nav a{
+    font-size:14px;
+    margin:4px 8px;
+  }
+}
+
+/* ====== Navbar mid-size (640px–1023px) ====== */
+@media (min-width:640px) and (max-width:1023px){
+  .nav-right{
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  nav a{
+    font-size:16px;
+  }
+}
+
+
+/* ==== Global fix for horizontal overflow ==== */
+html,body{
+  overflow-x:hidden;
+}
+*,*::before,*::after{
+  box-sizing:border-box;
+}
+
+/* ==== Container padding ==== */
+@media (max-width:639px){
+  .container{
+    padding-left:16px !important;
+    padding-right:16px !important;
+  }
+}
+
+/* ==== Navbar mobile tweaks ==== */
+@media (max-width:639px){
+  header .nav-right{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    font-size:14px;
+    margin-top:4px;
+  }
+}
+
+/* ==== Hero mobile layout ==== */
+@media (max-width:639px){
   .hero-content{
-    flex-direction: column;
-    text-align:center;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:24px;
+  }
+  .hero-text{
+    flex:1 1 100%;
+    text-align:left;
+  }
+  .hero-animation{
+    flex:1 1 100%;
+    justify-content:center;
+    margin-top:10px;
+  }
+}
+
+/* ==== Project grid already handled; ensure 1col mobile ==== */
+@media (max-width:639px){
+  .card-grid--projects{
+    grid-template-columns:1fr !important;
+  }
+}
+
+
+/* === FINAL OVERRIDES FOR MOBILE & DESKTOP 2025‑05‑25 === */
+
+/* Prevent horizontal scroll */
+html,body{overflow-x:hidden;}
+
+/* --- Navbar responsiveness --- */
+@media (max-width:639px){
+  .nav-right{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+    font-size:14px;
+    margin-top:8px;
+  }
+  .nav-right a{
+    display:inline-block;
+  }
+}
+
+/* --- Hero responsiveness --- */
+@media (max-width:639px){
+  .hero-content{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
     gap:24px;
   }
   .hero-animation{
-    order:2;
-    max-width:260px;
-    margin:0 auto;
+    width:100%;
+    display:flex;
+    justify-content:center;
   }
-  .hero-text{
-    order:1;
+  .hero-animation lottie-player{
+    max-width:260px;
+    height:auto !important;
+  }
+  .hero-text h2{
+    font-size:38px;
+    line-height:1.2;
   }
 }
+
+/* --- Project card grid columns --- */
+.card-grid--projects{
+  display:grid;
+  gap:40px;
+  margin-top:80px;
+}
+
+@media (max-width:639px){
+  .card-grid--projects{
+    grid-template-columns:1fr !important;
+  }
+}
+@media (min-width:640px) and (max-width:1023px){
+  .card-grid--projects{
+    grid-template-columns:repeat(2,1fr) !important;
+  }
+}
+@media (min-width:1024px){
+  .card-grid--projects{
+    grid-template-columns:repeat(3,1fr) !important;
+  }
+}
+
+/* Ensure contact card grid wrap correctly */
+.card-grid--contact{
+  display:grid;
+  gap:20px;
+}
+
