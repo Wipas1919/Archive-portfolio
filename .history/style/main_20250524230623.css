@@ -6,15 +6,6 @@ body {
   color: #222;
   line-height: 1.6;
   scroll-behavior: smooth;
-  user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 .container {
@@ -39,12 +30,6 @@ img {
   .card-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media screen and (max-width: 480px) {
-  h2, .section-title { font-size: 28px; }
-  .hero h2 { font-size: 28px; }
-  .hero p, .section-description, .about-text p, .card p { font-size: 16px; }
-  .btn { padding: 10px 20px; font-size: 16px; }
-}
 
 /* Navbar */
 header {
@@ -373,16 +358,6 @@ h2 {
   transform: scale(1.05);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
-
-.contact-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* 🔥 เพิ่มบรรทัดนี้เพื่อจัดไอคอนแนวดิ่ง */
-  height: 100px; /* ✅ ปรับความสูงให้เหมาะสม */
-  margin-bottom: 12px;
-}
-
 
 .contact-icon img {
   width: 48px;

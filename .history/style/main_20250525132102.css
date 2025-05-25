@@ -46,6 +46,11 @@ img {
   .btn { padding: 10px 20px; font-size: 16px; }
 }
 
+/* เพิ่ม dark mode รองรับอนาคต */
+@media (prefers-color-scheme: dark) {
+  body { background: #111; color: #eee; }
+  header, .card, footer { background: #222; }
+}
 /* Navbar */
 header {
   background: #fff;
@@ -373,16 +378,6 @@ h2 {
   transform: scale(1.05);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
-
-.contact-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* 🔥 เพิ่มบรรทัดนี้เพื่อจัดไอคอนแนวดิ่ง */
-  height: 100px; /* ✅ ปรับความสูงให้เหมาะสม */
-  margin-bottom: 12px;
-}
-
 
 .contact-icon img {
   width: 48px;
