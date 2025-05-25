@@ -282,7 +282,7 @@ section {
 
 .card-grid {
   display: grid;
-  /* สำคัญ: 3 คอลัมน์ */
+  grid-template-columns: repeat(3, 1fr); /* สำคัญ: 3 คอลัมน์ */
   gap: 40px;
   margin-top: 100px;
 }
@@ -640,35 +640,4 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
   }
 }
 /* 1 column on small screens (default) */
-}
-
-
-/* ========== MOBILE FIXES (<= 639px) ========== */
-@media (max-width: 639px){
-  /* Project cards: single column */
-  .card-grid--projects{
-    grid-template-columns: 1fr !important;
-  }
-
-  /* Navbar: wrap to new line and shrink font */
-  .nav-right{
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-  }
-  nav a{
-    font-size:14px;
-    margin:4px 8px;
-  }
-}
-
-/* ====== Navbar mid-size (640px–1023px) ====== */
-@media (min-width:640px) and (max-width:1023px){
-  .nav-right{
-    flex-wrap:wrap;
-    gap:12px;
-  }
-  nav a{
-    font-size:16px;
-  }
 }
