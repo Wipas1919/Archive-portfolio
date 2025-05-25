@@ -642,32 +642,28 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
 /* 1 column on small screens (default) */
 }
 
-/* ===== DESKTOP-ONLY MODE (CSS BLOCK) =====
-   Hide entire site below 1024px width and show full-screen notice
---------------------------------------------------------------- */
-@media (max-width: 1023px){
-  /* Hide all real content */
-  body > * { display: none !important; }
-
-  /* Full-screen notice */
-  body::before{
-    content: "This site is designed for desktop browsers only.\A Please visit on a larger screen.";
-    white-space: pre-line;
-    position: fixed;
-    inset: 0;
-    background: #ffffff;
-    color: #000000;
-    padding: 40px 24px;
-    display: flex;
+/* ========= MOBILE HERO IMAGE FIX (<=639px) ========= */
+@media (max-width: 639px){
+  .hero-content{
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    line-height: 1.4;
-    text-align: center;
-    z-index: 99999;
   }
-
-  /* Prevent horizontal scroll */
-  html, body{ overflow: hidden; }
+  .hero-text{
+    order: 1;
+    text-align: center;
+    margin-top: 0;
+  }
+  .hero-animation{
+    order: 2;
+    width: 80%;
+    max-width: 260px;
+    margin: 24px auto 0;
+    display: block !important;
+  }
+  .hero-animation img,
+  .hero-animation canvas,
+  .hero-animation svg{
+    width: 100%;
+    height: auto;
+  }
 }
