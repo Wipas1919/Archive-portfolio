@@ -634,7 +634,7 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
   }
 }
 /* 2 columns on tablets */
-@media (min-width: 640px) and (max-width: 1023px){
+@media (min-width: 500px) and (max-width: 1023px){
   .card-grid--projects{
     grid-template-columns: repeat(2, 1fr);
   }

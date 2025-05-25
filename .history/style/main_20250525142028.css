@@ -379,7 +379,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center; /* 🔥 เพิ่มบรรทัดนี้เพื่อจัดไอคอนแนวดิ่ง */
-  height: 100px; /* ✅ ปรับความสูงให้เหมาะสม */
+  height: 300px; /* ✅ ปรับความสูงให้เหมาะสม */
   margin-bottom: 12px;
 }
 
@@ -481,63 +481,42 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
 #page-loader{animation:hideLoaderFallback 0.5s forwards 0.5s;}
 
 
-
-/* ====  Reusable Card Component  ================================== */
+/* data engineer */
 .card {
-  background: #ffffff;
-  border: 1px solid #eee;
+  background: #fff;
   border-radius: 12px;
-  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,.05);
-  transition: transform .3s ease, box-shadow .3s ease;
+  transition: transform 0.2s ease;
 }
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h4 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,.1);
+  transform: translateY(-5px);
 }
 
-.card__icon{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  height:100px;
-  margin-bottom:12px;
-}
-.card__icon img{
-  width:48px;
-  height:48px;
-  transition: transform .3s ease;
-}
-.card:hover .card__icon img{
-  transform:scale(1.15);
-}
 
-/* Variant – project card (clickable) */
-.card--project{cursor:pointer;}
 
-/* Variant – glassmorphism contact card */
-.card--glass{
-  background: rgba(255,255,255,.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,.3);
-  box-shadow: 0 8px 32px rgba(0,0,0,.1);
-}
-
-/* Grids */
-
-.card-grid--contact{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-  gap:20px;
-  margin-top:40px;
-}
-
-/* Remove legacy duplicate styles */
-.contact-card, .contact-card.glass, .glass-card{
-}/* project */
+/* project */
 
 .project-blog {
   max-width: 800px;
@@ -626,18 +605,4 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
   color: inherit !important;
   text-decoration: none !important;
 }
-
-/* ===== Card grid (Projects) enforce 3-column on desktop ===== */
-@media (min-width: 1024px){
-  .card-grid--projects{
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-/* 2 columns on tablets */
-@media (min-width: 640px) and (max-width: 1023px){
-  .card-grid--projects{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-/* 1 column on small screens (default) */
 }

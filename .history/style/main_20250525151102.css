@@ -379,7 +379,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center; /* 🔥 เพิ่มบรรทัดนี้เพื่อจัดไอคอนแนวดิ่ง */
-  height: 100px; /* ✅ ปรับความสูงให้เหมาะสม */
+  height: 80px; /* ✅ ปรับความสูงให้เหมาะสม */
   margin-bottom: 12px;
 }
 
@@ -527,7 +527,12 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
 }
 
 /* Grids */
-
+.card-grid--projects{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:40px;
+  margin-top:80px;
+}
 .card-grid--contact{
   display:grid;
   grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
@@ -625,19 +630,4 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
 .contact-card a:active {
   color: inherit !important;
   text-decoration: none !important;
-}
-
-/* ===== Card grid (Projects) enforce 3-column on desktop ===== */
-@media (min-width: 1024px){
-  .card-grid--projects{
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-/* 2 columns on tablets */
-@media (min-width: 640px) and (max-width: 1023px){
-  .card-grid--projects{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-/* 1 column on small screens (default) */
 }
