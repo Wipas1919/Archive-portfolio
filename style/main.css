@@ -1,0 +1,582 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px; /* เพิ่ม padding ด้านข้าง */
+}
+
+@media screen and (max-width: 767px) {
+  .container { padding: 0 16px; }
+  .hero h2 { font-size: 36px; }
+  .hero p { font-size: 18px; }
+  .card-grid { grid-template-columns: 1fr; }
+  nav a { font-size: 14px; }
+  .hero-content { flex-direction: column; }
+  .about-image img { width: 100%; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero h2 { font-size: 48px; }
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+/* Navbar */
+header {
+  background: #fff;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Poppins', serif;
+  font-size: 30px;
+  color: #fc5246;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #fd3a2d;
+}
+
+/* ปุ่มหลักของเมนู dropdown */
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  font-weight: 600;
+  cursor: pointer;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.dropbtn:hover {
+  color: #fd3a2d;
+}
+
+/* เมนูที่แสดงเมื่อ hover */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  min-width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+/* แสดงเมื่อ hover */
+.dropdown-wrapper:hover .dropdown-content {
+  display: block;
+}
+
+/* ลิงก์ใน dropdown */
+.dropdown-content a {
+  display: block;
+  padding: 12px 20px;
+  color: #222;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect ของลิงก์ */
+.dropdown-content a:hover {
+  background-color: #eaeaea;
+  color: #fd3a2d;
+}
+
+.hero-animation {
+  margin-top: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: #eaeaea;
+  color: #000000;
+}
+
+#hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.hero h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #1d1d1d;
+}
+
+.btn, .hero .btn {
+  display: inline-block;
+  background: #fd3a2d;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.btn:hover, .hero .btn:hover {
+  background: #252525;
+}
+
+/* Sections */
+section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* About Section */
+.about-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+
+.about-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.about-text h2 {
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Timeline */
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #fd3a2d;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: 0;
+}
+
+.timeline-content {
+  margin-left: 20px;
+}
+
+.timeline-content h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.timeline-content p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Projects Section */
+#projects {
+  margin-bottom: 10px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* สำคัญ: 3 คอลัมน์ */
+  gap: 40px;
+  margin-top: 100px;
+}
+
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+  border: 1px solid #eee;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Contact Section */
+.contact {
+  background: rgba(255, 255, 255, 0.5); /* 1 = โปร่งแสง 50% */
+  text-align: center;
+}
+
+.section-subtitle {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #4e4e4e;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 36px;
+  color: #292929
+}
+
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #2e2e2e;
+}
+
+.section-description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #4e4e4e;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.contact-card.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.contact-card.glass:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card.glass:hover .contact-icon img {
+  transform: scale(1.15);
+}
+
+/* Footer */
+footer {
+  background: #f5f5f5;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+  transform: scale(1.2);
+}
+
+#hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* animation-data */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1 1 55%;
+}
+
+.hero-animation {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Page Loader & Smooth Scroll ===== */
+html{scroll-behavior:smooth;}
+
+#page-loader{
+  position:fixed;inset:0;display:grid;place-items:center;
+  background:#ffffff;z-index:9999;opacity:1;
+  transition:opacity .0.5s ease;
+}
+#page-loader .spinner{
+  width:32px;height:32px;border:4px solid #e5e5e5;
+  border-top-color:#ff694b;border-radius:50%;
+  animation:spin .8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+body.loaded #page-loader{opacity:0;pointer-events:none;}
+body.fade-out{opacity:0;transition:opacity .0.5s ease;}
+
+@keyframes hideLoaderFallback{to{opacity:0;pointer-events:none;}}
+#page-loader{animation:hideLoaderFallback 0.5s forwards 0.5s;}
+
+
+/* data engineer */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h4 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+/* project */
+
+.project-blog {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.project-blog h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222;
+}
+
+.project-blog .tag {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #333;
+  padding: 6px 12px;
+  margin: 0 8px 20px 0;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.project-blog p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.project-blog img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+/* button */
+.back-float-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fc5246;
+  color: white;
+  padding: 10px 24px;
+  font-size: 14px;
+  border-radius: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 9999;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease;
+  width: auto;       /* ปรับให้ขนาดพอดีกับเนื้อหา */
+  max-width: 200px;  /* จำกัดไม่ให้ปุ่มกว้างเกินไป */
+}
+
+.back-float-btn:hover {
+  background-color: #e6483c;
+}
+
+@media (max-width: 768px) {
+  .back-float-btn {
+    padding: 9px 18px;
+    font-size: 13px;
+    bottom: 20px;
+  }
+/* ===== FINAL OVERRIDE ===== */
+.contact-card a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.contact-card a:visited {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.contact-card a:hover,
+.contact-card a:focus,
+.contact-card a:active {
+  color: inherit !important;
+  text-decoration: none !important;
+}

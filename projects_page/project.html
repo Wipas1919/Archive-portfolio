@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Detail</title>
+  <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+  <div id="page-loader"><div class="spinner"></div></div>
+  <header>
+    <div class="container">
+      <h1 class="logo">Portfolio</h1>
+      <nav class="nav-right">
+        <a href="../index.html">Home-hv,^</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="../index.html#projects">Back to Collection</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-detail container" id="project-container">
+    <!-- เนื้อหาแต่ละโปรเจกต์จะถูกแสดงที่นี่ -->
+  </section>
+
+  <script src="../scripts/main.js" defer></script>
+  <script>
+    // ดึงค่า id จาก URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectId = urlParams.get("id");
+
+    const projectContainer = document.getElementById("project-container");
+
+    const projectMap = {
+      "data-engineer": "Data Engineer",
+      "business-analysis": "Business Analysis",
+      "bi-solutions": "Business Intelligent Solutions",
+      "strategic-data": "Strategic Data-Driven",
+      "cloud-cert": "Cloud Certification",
+      "data-integration": "Data Product Integration"
+    };
+
+    if (projectId && projectMap[projectId]) {
+      projectContainer.innerHTML = `
+        <h2>${projectMap[projectId]}</h2>
+        <p>This is a placeholder page for <strong>${projectMap[projectId]}</strong> project. Content will be added soon.</p>
+      `;
+    } else {
+      projectContainer.innerHTML = "<p>Project not found.</p>";
+    }
+  </script>
+  <button class="back-float-btn" onclick="history.back()">← Back</button>
+</body>
+</html>
