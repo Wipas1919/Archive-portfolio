@@ -641,22 +641,19 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
 }
 /* 1 column on small screens (default) */
 }
+  /* ===== BLOCK MOBILE DEVICES ONLY ===== */
+@media (hover: none) and (pointer: coarse) {
+  body > * {
+    display: none !important;
+  }
 
-/* ===== DESKTOP-ONLY MODE (CSS BLOCK) =====
-   Hide entire site below 1024px width and show full-screen notice
---------------------------------------------------------------- */
-@media (hover: none) and (pointer: coarse){
-  /* Hide all real content */
-  body > * { display: none !important; }
-
-  /* Full-screen notice */
-  body::before{
-    content: "This site is designed for desktop browsers only.\A Please visit on a larger screen.";
+  body::before {
+    content: "This website is optimised for desktop only.\A Please view it on a computer.";
     white-space: pre-line;
     position: fixed;
     inset: 0;
-    background: #ffffff;
-    color: #000000;
+    background: #fff;
+    color: #000;
     padding: 40px 24px;
     display: flex;
     align-items: center;
@@ -667,6 +664,11 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
     text-align: center;
     z-index: 99999;
   }
+
+  html, body {
+    overflow: hidden;
+  }
+}
 
   /* Prevent horizontal scroll */
   html, body{ overflow: hidden; }

@@ -645,9 +645,20 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
 /* ===== DESKTOP-ONLY MODE (CSS BLOCK) =====
    Hide entire site below 1024px width and show full-screen notice
 --------------------------------------------------------------- */
-@media (hover: none) and (pointer: coarse){
-  /* Hide all real content */
-  body > * { display: none !important; }
+/* ===== DESKTOP‑ONLY NOTICE (Touch devices only) ===== */
+
+
+  body::before{
+    content:"This site is optimised for desktop browsers.\A Please visit on a larger screen.";
+    white-space:pre-line;
+    position:fixed; inset:0;
+    display:flex; align-items:center; justify-content:center;
+    font-family:"Poppins",sans-serif; font-size:18px; line-height:1.4;
+    background:#fff; color:#000; padding:40px 24px; text-align:center;
+    z-index:99999;
+  }
+
+  html,body{ overflow:hidden; }
 
   /* Full-screen notice */
   body::before{
@@ -670,4 +681,20 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
 
   /* Prevent horizontal scroll */
   html, body{ overflow: hidden; }
+
+/* ===== DESKTOP-ONLY NOTICE (Touch smartphones only) ===== */
+@media (max-width: 1023px) and (hover: none) and (pointer: coarse){
+  body > * { display:none!important; }
+
+  body::before{
+    content:"This site is optimised for desktop browsers.\A Please visit on a larger screen.";
+    white-space:pre-line;
+    position:fixed; inset:0;
+    display:flex; align-items:center; justify-content:center;
+    font-family:"Poppins",sans-serif; font-size:18px; line-height:1.4;
+    background:#fff; color:#000; padding:40px 24px; text-align:center;
+    z-index:99999;
+  }
+
+  html,body{ overflow:hidden; }
 }
