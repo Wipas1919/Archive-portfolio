@@ -284,7 +284,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* สำคัญ: 3 คอลัมน์ */
   gap: 20px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 
@@ -292,7 +292,6 @@ section {
   background: #ffffff;
   padding: 30px;
   border-radius: 12px;
-  max-height: 280px;
   text-align: center;
   transition: box-shadow 0.3s;
   border: 1px solid #eee;
@@ -309,7 +308,7 @@ section {
 }
 
 .card h3 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 15px;
   color: #333;
 }

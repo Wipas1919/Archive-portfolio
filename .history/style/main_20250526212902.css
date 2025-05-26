@@ -292,7 +292,7 @@ section {
   background: #ffffff;
   padding: 30px;
   border-radius: 12px;
-  max-height: 280px;
+  max-height: 250px;
   text-align: center;
   transition: box-shadow 0.3s;
   border: 1px solid #eee;
@@ -309,7 +309,7 @@ section {
 }
 
 .card h3 {
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 15px;
   color: #333;
 }
