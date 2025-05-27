@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full viewport height for centering */
+}
+
+.chat-container {
+    width: 400px; /* Or your preferred width */
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensures children conform to border-radius */
+}
+
+#chatbox-title {
+    background-color: #007bff; /* Or your preferred brand color */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.chat-display-area {
+    flex-grow: 1; /* Allows this area to expand */
+    height: 400px; /* Fixed height, or use max-height and flex-grow */
+    overflow-y: auto; /* Scroll for older messages */
+    padding: 15px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 18px; /* More rounded bubbles */
+    line-height: 1.4;
+    max-width: 80%; /* Messages don't span full width */
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end; /* Align to the right */
+    margin-left: auto; /* Push to the right */
+}
+
+.bot-message {
+    background-color: #e9e9eb;
+    color: #333;
+    align-self: flex-start; /* Align to the left */
+    margin-right: auto; /* Push to the left */
+}
+
+.chat-input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #f8f9fa; /* Slightly different background for input area */
+}
+
+#userInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounded input field */
+    margin-right: 10px;
+}
+
+#sendButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#sendButton:hover {
+    background-color: #0056b3;
+}
