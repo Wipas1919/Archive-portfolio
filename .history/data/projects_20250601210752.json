@@ -1,0 +1,154 @@
+{
+  "data-engineer": {
+    "projects": [
+      {
+        "title": "End-to-End Data Engineering Journey",
+        "slug": "End-to-End Data Engineering Journey",
+        "description": "Full-stack ETL pipeline implementation",
+        "image": "/images/data-engineers.jpg"
+      },
+      {
+        "title": "End-to-End Data Infrastructure Planning",
+        "slug": "End-to-End Data Infrastructure Planning",
+        "description": "Process Design Fundamental",
+        "image": "/images/data-foundamatal.jpg"
+      },
+      {
+        "title": "Data Governance",
+        "slug": "Data Governance",
+        "description": "Designing and implementing a hybrid data governance framework",
+        "image": "/images/data-governance.jpg"
+      }
+    ]
+  },
+  "business-analysis": {
+    "title": "Business Analysis",
+    "description": "Transform data into insights for decision-making.",
+    "image": "../images/ba.svg",
+    "overview": "Analyzed survey and operational data to support marketing strategy.",
+    "contributions": [
+      "Designed data collection forms",
+      "Used SQL & Power BI for analysis",
+      "Presented insights to leadership"
+    ],
+    "tools": [
+      "Excel",
+      "SQL",
+      "Power BI",
+      "Survey Analysis"
+    ],
+    "impact": "Helped increase campaign engagement by 30%",
+    "projects": [
+      {
+        "title": "post-event analysis",
+        "slug": "post-event analysis",
+        "description": "Built interactive dashboards to monitor sentiment trends.",
+        "image": "/images/post-event.png"
+      },
+      {
+        "title": "New insights are cooking",
+        "slug": "campaign-performance-analysis",
+        "description": "preparing something worth the wait.",
+        "image": "/images/upcoming-cover.png"
+      },
+      {
+        "title": "New insights are cooking",
+        "slug": "operational-kpi-tracking",
+        "description": "preparing something worth the wait.",
+        "image": "/images/upcoming-cover.png"
+      }
+    ]
+  },
+  "bi-solutions": {
+    "title": "Business Intelligent",
+    "projects": [
+      {
+        "title": "Dashboard Routine",
+        "description": "Designed Power BI dashboard to visualize sales KPIs across regions.",
+        "image": "/images/bi-routine-1.png",
+        "slug": "bi-sales-performance"
+      },
+      {
+        "title": "Dashboard Near-real time",
+        "description": "Used data visualization to cluster customer segments based on behavior.",
+        "image": "/images/bi-routine-2.png",
+        "slug": "bi-customer-segmentation"
+      },
+      {
+        "title": "KPI Overview",
+        "description": "Built interactive dashboards to summarize high-level KPIs for executives.",
+        "image": "/images/bi-routine-3.png",
+        "slug": "bi-kpi-overview"
+      }
+    ]
+  },
+  "strategic-data": {
+    "title": "Data-Driven",
+    "projects": [
+      {
+        "title": "Speaker Trend Technoligies (Asistant) ",
+        "description": "Data & Technologies driven.",
+        "image": "/images/bi-routine-4.jpg",
+        "slug": "marketing-insight-framework"
+      },
+      {
+        "title": "Power BI Training",
+        "description": "Training each department small group.",
+        "image": "/images/bi-routine-5.jpg",
+        "slug": "event-analytics-dashboard"
+      },
+      {
+        "title": "Coming Soon!",
+        "description": "preparing something worth the wait.",
+        "image": "/images/upcoming-cover.png",
+        "slug": "decision-intelligence-system"
+      }
+    ]
+  },
+  "data-integration": {
+    "title": "Data Product",
+    "projects": [
+      {
+        "title": "Chat AI for web-event",
+        "description": "Built backend pipeline to integrate chatbot logs into Datamart for insights.",
+        "image": "/images/bi-routine-6.png",
+        "slug": "chatbot-analytics-pipeline"
+      },
+      {
+        "title": "Hr Recuddtor Macthing",
+        "description": "Created dynamic reporting tool from MySQL and PostgreSQL for internal teams.",
+        "image": "/images/upcoming-cover.png",
+        "slug": "self-service-report-generator"
+      },
+      {
+        "title": "Comming Soon!",
+        "description": "preparing something worth the wait.",
+        "image": "/images/upcoming-cover.png",
+        "slug": "customer-feedback-hub"
+      }
+    ]
+  },
+  "cloud-cert": {
+  "title": "Certification",
+  "projects": [
+    {
+      "title": "Comming Soon!",
+      "description": "preparing something worth the wait.",
+      "image": "/images/upcoming-cover.png",
+      "slug": "gcp-certification"
+    },
+    {
+      "title": "Comming Soon!",
+      "description": "preparing something worth the wait.",
+      "image": "/images/upcoming-cover.png",
+      "slug": "aws-certification"
+    },
+    {
+      "title": "Comming Soon!",
+      "description": "preparing something worth the wait.",
+      "image": "/images/upcoming-cover.png",
+      "slug": "azure-certification"
+    }
+  ]
+}
+}

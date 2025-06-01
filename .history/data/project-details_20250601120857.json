@@ -1,0 +1,572 @@
+{
+  "End-to-End Data Engineering Journey": {
+    "title": "End-to-End Data Engineering Journey",
+    "image": "..",
+    "tags": [
+      "Python",
+      "SQL",
+      "ETL",
+      "Orchestration ETL",
+      "Pipeline Optimization",
+      "Data Storage Layer",
+      "Data Modeling",
+      "Infrastructure",
+      "Bash",
+      "Shell",
+      "Docker",
+      "Portainer",
+      "Data Security",
+      "Server Setup"
+    ],
+    "content": [
+      {
+        "type": "image",
+        "value": "/images/data-en-2.jpg",
+        "caption": "Domain"
+      },
+      {
+        "type": "text",
+        "value": "<strong>Background & Motivation</strong>"
+      },
+      {
+        "type": "text",
+        "class": "indent",
+        "value": "Upon joining this project, I encountered a significant challenge—organizational data was highly fragmented across multiple sources. The existing infrastructure lacked any centralized or automated data pipeline. Most data remained siloed within disparate systems and was primarily analyzed through manually maintained Excel files, leading to underutilization of valuable insights."
+      },
+       {
+        "type": "text",
+        "value": "At that time, the organization was just beginning to explore data-driven practices. Our data team consisted of only two members—my supervisor, who had initiated some foundational work, and myself. Given the lean team structure, I was expected not only to support but also to independently manage and understand the system from the ground up. This led me to dive into designing and implementing core data infrastructure components."
+      },
+      {
+        "type": "text",
+        "value": "The first step was to develop a high-level data domain mapping, classifying datasets into key functional domains. I implemented a color-coded system to visually communicate the current integration status of each domain:"
+      },
+      {
+        "type": "text",
+        "value": "🟩 Green: Fully integrated and available via the data mart"
+      },
+      {
+        "type": "text",
+        "value": "🟨 Yellow: In progress"
+      },
+      {
+        "type": "text",
+        "value": "⬜ Gray: Not yet available"
+      },
+      {
+        "type": "text",
+        "value": "This domain overview helped align stakeholders and clarify which systems had been onboarded into our centralized database, ready for BAU (Business-As-Usual) access."
+      },
+      {
+        "type": "text",
+        "value": "Recognizing the scale and impact of the data fragmentation, I set out to build an end-to-end data infrastructure—from ingestion, transformation, and data modeling to reporting and monitoring. My objective was to deliver:"
+      },
+      {
+        "type": "text",
+        "value": "● A scalable, automated data pipeline <br> ● Clean, reliable data for business teams <br> ● Reduced manual data wrangling <br> ● Accelerated time-to-insight for decision-makers"
+      },
+      {
+        "type": "text",
+        "value": "This foundational work laid the groundwork for the subsequent project titled [Project Name Here], which formalized these efforts into a sustainable data engineering framework."
+      },
+      {
+        "type": "image",
+        "value": "/images/data-en-1.jpg",
+        "caption": "Domain"
+      },
+      {
+        "type": "text",
+        "value": "<strong>Phase 1: Building from Scratch – Ubuntu Server & Database Foundation </strong> <br><br> The project began with a blank slate. I collaborated closely with the Infrastructure team to provision and configure an on-premises Ubuntu Server. This phase involved setting up core system configurations, including: <br><br> ● Network and Security Setup: Configuring firewall rules, SSH access, and port forwarding <br>● OS Installation: Installing and hardening the Ubuntu Server (Linux) environment <br> ● Backup Policy Compliance: Aligning with organizational standards for data backup and recovery procedures <br><br> To organize system services effectively, we adopted a container-based architecture using Portainer, which allowed us to manage and segment different stacks of services in a modular and maintainable way."
+      },
+      {
+        "type": "text",
+        "value": "Database Setup<br>As a foundational layer, we deployed a MySQL relational database to handle raw and transactional data ingestion. MySQL was selected based on its performance efficiency for high-frequency transaction logging—especially suitable for IoT-originated datasets such as sensor feeds and device logs."
+      },
+      {
+        "type": "text",
+        "value": "This database served as the Raw / Staging Layer, capturing incoming data streams for further processing."
+      },
+      {
+        "type": "text",
+        "value": "To facilitate schema design, database maintenance, and query execution, I used DBeaver, a powerful database GUI tool, to perform:<br>● DDL scripting (table/view creation, indexing)<br>● SQL query writing for exploration and validation<br>● Connection management across different environments (Dev/Test/Prod)<br><br>This initial phase laid the groundwork for the subsequent development of ETL pipelines and data-transformation workflows in the next phase."
+      },
+      {
+        "type": "image",
+        "value": "/images/data-en-3.png",
+        "caption": "Example.png"
+      },
+      {
+        "type": "text",
+        "value": "<strong>Phase 2: Designing a Scalable ETL Pipeline with Windmill</strong><br><br>To establish a reliable and maintainable data pipeline, I chose Windmill as the orchestration tool for building ETL workflows. Given the current system’s moderate complexity and relatively low data volume, Windmill offered an ideal balance between functionality and simplicity. Its intuitive UI/UX and low operational overhead made it a pragmatic choice over more complex orchestrators such as Apache Airflow, which is better suited for large-scale systems and may be considered for future expansion."
+      },
+      {
+        "type": "image",
+        "value": "/images/data-en-5.png",
+        "caption": "Example.png"
+      },
+      {
+        "type": "text",
+        "value": "       Rationale Behind Tool Selection<br>● Low learning curve for IT and Dev teams with limited experience in complex orchestration tools<br>● Efficient UI for managing scripts, scheduling, and variables<br>● Built-in integrations and error tracking, which reduce setup time for small- to mid-sized data workflows"
+      },
+      {
+        "type": "text",
+        "value": "ETL Architecture Overview<br>The pipeline was modularized into three core stages:<br>- Extract: Ingest data from internal and external systems (e.g., APIs, IoT devices, vendor systems)<br>- Transform: Clean, normalize, deduplicate, and enrich data to meet business-logic requirements<br>- Load: Push the processed data into the target relational database, structured for downstream analytics"
+      },
+      {
+        "type": "text",
+        "value": "●Extract<br>Data extraction involved both technical and organizational challenges. Each integration required:<br>- Engaging Data Owners to gain consent and clarify business rationale<br>- Collaborating with internal and external stakeholders, including vendors<br>- Implementing technical connectors via RESTful APIs, webhooks, or file-based ingestion<br>- Handling network configurations and authentication, often in partnership with the infrastructure team"
+      },
+      {
+        "type": "text",
+        "value": "● Transform<br>Transformations ranged from simple data formatting to more complex logic encoding business rules. Since our end users consumed data primarily via Power BI, the goal was to minimize complex DAX expressions and instead deliver analysis-ready data via a curated Data Mart layer.<br><br>This ensured:<br>- Faster report development<br>- Improved data literacy among business users<br>- Reduced dependency on BI developers for logic implementation"
+      },
+      {
+        "type": "text",
+        "value": "● Load<br>The final phase included various data-loading strategies, depending on use case:<br>- Full replacement for static datasets<br>- Incremental updates using timestamp logic or unique keys<br>- Chunk/batch processing for large datasets to avoid memory bottlenecks<br><br>Each script was modularized by purpose to support scalability and debugging—for example:<br>- Full refresh<br>- Point updates<br>- Append-only loads"
+      },
+      {
+        "type": "image",
+        "value": "/images/data-en-4.jpg",
+        "caption": "Example.png"
+      },
+      {
+        "type": "text",
+        "value": "Scheduler & Monitoring<br><br>Windmill’s built-in scheduling (via cron syntax) enabled automatic execution of pipelines at specified intervals. Additionally, I implemented error notifications via email to ensure that any pipeline failures could be quickly identified and resolved by the team."
+      },
+      {
+        "type": "text",
+        "value": "Security & Credential Management<br>To ensure secure and auditable workflows:<br><br>- IAM credentials and API keys were stored as environment variables and encrypted secrets<br>- These were managed via Windmill’s secure vault, ensuring clear separation between business logic and sensitive configuration<br>- This allowed safe collaboration without exposing privileged information in scripts or version control"
+      },
+      {
+        "type": "image",
+        "value": "/images/data-en-6.jpg",
+        "caption": "Example.png"
+      },
+      {
+        "type": "text",
+        "value": "<strong>Phase 3: Building the Data Mart for Analytics Consumption</strong><br><br>Following data ingestion into the central database, the next critical step was the creation of curated Data Marts—purpose-built datasets tailored to the analytical and reporting needs of various business units."
+      },
+      {
+        "type": "text",
+        "value": "These data marts were designed to serve as the semantic layer for self-service BI tools, reducing the need for business users to query raw tables or write complex transformation logic."
+      },
+      {
+        "type": "text",
+        "value": "Governance & Security Considerations<br>This phase required careful attention to two key areas:<br>1. Data Governance<br>2. Visualization & Insight Delivery (via Power BI)"
+      },
+      {
+        "type": "text",
+        "value": "Given that some source data contained Personally Identifiable Information (PII), it was essential to adhere to data privacy best practices. My approach included:<br><br>- Segregation of Sensitive Data: All PII was isolated from analytical layers<br>- Anonymization & Encoding: Sensitive attributes were transformed using techniques such as one-hot encoding, ensuring analytical utility without exposing identity<br>- Marking and Classification: Governance tags were applied for audit and policy enforcement (as part of a future expansion)"
+      },
+      {
+        "type": "text",
+        "value": "As a result, the finalized Data Marts were secure, anonymized, and analytics-ready, ensuring compliance and usability."
+      },
+      {
+        "type": "text",
+        "value": "Architecture & Performance Design<br>Using Windmill, I structured the transformation pipeline as modular and asynchronous flows, allowing for:<br><br>- Parallel Processing: Independent transformation blocks executed concurrently to reduce overall ETL runtime<br>- Nested Sub-flows: Each task in the flow could call sub-flows to encapsulate reusable logic (e.g., shared cleaning steps or lookups)<br>- Reduced Complexity: Visual flow diagrams improved maintainability and onboarding for new team members"
+      },
+      {
+        "type": "text",
+        "value": "This design not only increased pipeline efficiency but also provided clear visualization of each step in the data flow, from staging through to mart population."
+      }      ,
+      {
+        "type": "text",
+        "value": "BI Integration<br>The Data Mart output served as the primary data source for Power BI dashboards, which I designed to:<br>- Simplify user experience (minimize reliance on complex DAX logic)<br>- Support drill-down, trend analysis, and KPI tracking<br>- Enable data-driven decision-making across departments"
+      },
+      {
+        "type": "text",
+        "value": "By ensuring that data delivered to Power BI was clean, enriched, and pre-aggregated, we significantly reduced time-to-insight and empowered business users to explore data confidently."
+      },
+      {
+        "type": "image",
+        "value": "/images/data-en-7.jpg",
+        "caption": "Example.png"
+      },
+      {
+        "type": "text",
+        "value": "<strong>Phase 4: Visualization & Insight Delivery</strong><br><br>The final phase focused on enabling business users to independently access, explore, and derive value from data. This phase was separated into two core initiatives:<br><br>- Dashboard & Monitoring<br>- Reporting & Advanced Analytics"
+      },
+      {
+        "type": "text",
+        "value": "These efforts were part of a broader initiative under the project \"[Project Name Here]\", designed to empower BAU (Business-As-Usual) teams to leverage BI tools effectively and reduce operational dependency on the Business Analytics team."
+      },
+      {
+        "type": "text",
+        "value": "       Dashboard & Monitoring<br><br>I connected the PostgreSQL Data Mart to Power BI, creating a suite of dashboards tailored to business needs. Key features included:<br><br>- Multi-dimensional analysis (daily, weekly, monthly trends)<br>- User-friendly design with clear navigation and visual cues<br>- Pre-built DAX measures for insights such as:<br>    - Growth Rate comparisons<br>    - Top-N performance by segment<br>    - Year-over-year analysis"
+      },
+      {
+        "type": "text",
+        "value": "To support scalability and adoption:<br><br>- Dashboards were designed for low-code/no-code handoff to BAU departments<br>- Initial deployment included training and onboarding for designated users<br>- Long-term ownership was transitioned to each department, who could extend and modify dashboards based on evolving needs"
+      },
+      {
+        "type": "text",
+        "value": "       Reporting & Deep-Dive Analysis<br><br>For more complex analytical needs, especially those requiring cross-domain joins or hypothesis testing beyond available Data Mart dimensions, responsibility remained with the Business Analytics team. These “deep reports” addressed:<br><br>- Ad hoc strategic questions<br>- Trend anomalies<br>- Exploratory insights for decision-makers"
+      },
+      {
+        "type": "text",
+        "value": "The backend pipeline supported this by integrating cleaned data from multiple domains into a semantic model within Power BI, enhancing accessibility and cross-functional analysis."
+      },
+      {
+        "type": "text",
+        "value": "Governance & Access Control<br><br>To ensure secure and organized usage:<br>- Each department was assigned a dedicated Power BI Workspace<br>- Role-based access was enforced via permission controls aligned with the organization’s Data Catalog<br>- Sensitive dashboards and datasets were isolated as needed to comply with internal governance standards"
+      },
+      {
+        "type": "text",
+        "value": "<strong>Summary</strong><br>By establishing a seamless connection from PostgreSQL to Power BI, I enabled departments to make data-driven decisions using self-service dashboards. These efforts not only improved data visibility but also:<br>- Reduced turnaround time for insights<br>- Offloaded routine reporting tasks from the analytics team<br>- Increased data literacy across business units"
+      },
+      {
+        "type": "text",
+        "value": "Note: The design, implementation process, and outcomes of selected dashboards are documented in a dedicated sub-project."
+      }      ,
+      {
+        "type": "text",
+        "value": "     Challenges & Deep-Dive Learnings<br>Throughout the course of this project, I encountered a wide range of technical and analytical challenges that significantly contributed to my professional growth. These real-world scenarios required both hands-on problem-solving and cross-domain collaboration. Key learning areas included:"
+      },
+      {
+        "type": "text",
+        "value": "System Configuration & Troubleshooting<br>- Gained extensive experience working with Linux CLI, particularly in debugging environment setup and deployment errors.<br>- Resolved issues related to:<br>    - Misconfigured `YAML` files in Windmill and Docker stacks<br>    - Networking challenges within Portainer, ensuring proper container-to-container communication<br>    - Port conflicts and version compatibility across multiple services"
+      },
+      {
+        "type": "text",
+        "value": "ETL Pipeline Debugging<br>- Investigated root causes of pipeline failures across the stack:<br>    - Source-side issues (e.g., data quality, schema mismatches)<br>    - Credential mismanagement<br>    - Execution-level errors within Windmill workflows<br>- Designed alert mechanisms and fallback strategies to reduce downtime and improve recovery time"
+      },
+      {
+        "type": "text",
+        "value": "       Query & Workflow Optimization<br>- Improved performance and reliability by:<br>    - Optimizing complex SQL queries and Python scripts<br>    - Redesigning pipeline logic to reduce memory and processing overhead<br>    - Implementing batch updates, error handling, and retry mechanisms for unstable data sources"
+      },
+      {
+        "type": "text",
+        "value": "       Business Logic Reconstruction & Data Investigation<br>- Dealt with legacy datasets stored without clear documentation<br>- Conducted reverse engineering of table relationships and column semantics to rediscover business logic<br>- Collaborated with stakeholders to reconstruct transformation rules and validate data accuracy before delivering to BI tools"
+      },
+      {
+        "type": "text",
+        "value": "These experiences deepened my ability to work across the full data lifecycle, from system-level configuration to business-impactful analytics, and strengthened my confidence in designing scalable, secure, and business-aligned data solutions."
+      },
+      {
+        "type": "text",
+        "value": "<strong>Final Outcome & Personal Reflection</strong><br><br>By the end of this project, I successfully delivered a functioning end-to-end data infrastructure that transformed fragmented, underutilized data into a structured, accessible, and business-ready asset. Key achievements included:"
+      },
+      {
+        "type": "text",
+        "value": "✅ Deployment of an on-premises Ubuntu server with secure, containerized services using Portainer<br>✅ Design and implementation of a modular ETL pipeline using Windmill to extract, clean, and load data into MySQL/PostgreSQL<br>✅ Construction of data marts with clear separation of PII, aligned with data governance standards<br>✅ Integration with Power BI, enabling departments to access self-service dashboards and perform actionable analysis<br>✅ Reduction in manual reporting workload for the Business Analytics team through automation and empowerment of BAU users"
+      },
+      {
+        "type": "text",
+        "value": "Most importantly, this experience affirmed my passion for solving real-world problems with data—balancing technical excellence with business value."
+      }
+    ]
+  },
+  "End-to-End Data Infrastructure Planning": {
+    "title": "End-to-End Data Infrastructure Planning",
+    "image": "../images/project-dashboard.png",
+    "tags": [
+      "Data Architecture",
+      "System Design",
+      "Scalable Infrastructure",
+      "Automation Workflow",
+      "Metadata Management",
+      "Security & Compliance",
+      "Strategic Planning"
+    ],
+    "content": [
+       {
+        "type": "text",
+        "value": "This diagram illustrates the foundational data architecture established during the initial phase of joining the MICE business, with a primary focus on Data Engineering. It outlines the planning and progressive development of key system components including the data ingestion pipeline, metadata governance, and storage layer. The visual representation also highlights how each component contributes to enabling long-term, data-driven decision-making that aligns with business goals."
+      },
+      {
+        "type": "note",
+        "value": "Work-in-progress diagram"
+      },
+      {
+        "type": "image",
+        "value": "/images/data-en-7.jpg",
+        "caption": "Example.png"
+      },
+      {
+        "type": "text",
+        "value": "After establishing the overarching project objectives, the next step involved scoping the data domain to assess the current state of data availability—identifying datasets that are available, not yet available, or in progress. This assessment serves as a foundation for prioritizing data pipelines and identifying critical data dependencies essential for analytics, governance, and downstream business applications."
+      },
+      {
+        "type": "text",
+        "value": "<strong>System Architecture Design via Figma</strong><br>We leveraged Figma as a collaborative tool to design and iterate on the system’s data architecture. The visual-first approach allowed the Data Engineering team to clearly communicate structural concepts and data pipeline flows across the ingestion, processing, and serving layers. It also enabled cross-functional teams to better understand system interactions and actively contribute to the development process.<br>(Work-in-progress diagram)"
+      },
+      {
+        "type": "image",
+        "value": "/images/data-en-8.jpg",
+        "caption": "Example.png"
+      },
+      {
+        "type": "text",
+        "value": "<strong>System Scope Overview</strong><br>The current system architecture is structured into six core layers, each with clearly defined responsibilities and supporting tools. This layered approach ensures scalability, governance, and interoperability across all components of the data platform."
+      },
+      {
+        "type": "text",
+        "value": "<strong>1. Governance & Monitoring Layer</strong><br>Purpose: Ensures data quality, security, access control, and overall governance throughout the platform."
+      },
+      {
+        "type": "text",
+        "value": "<strong>2. Pipeline & Operation Layer</strong><br>Purpose: Manages the ETL/ELT workflows and operational orchestration.<br>Key Tools: Windmill: Orchestrates and manages pipeline execution with built-in version rollback<br> GitLab: Used for version control (Windmill is prioritized due to native version tracking)<br>Supports scheduling and dependency management within pipelines"
+      },
+      {
+        "type": "text",
+        "value": "<strong>2. Pipeline & Operation Layer</strong><br>Purpose: Manages the ETL/ELT workflows and operational orchestration.<br>Key Tools: Windmill: Orchestrates and manages pipeline execution with built-in version rollback<br> GitLab: Used for version control (Windmill is prioritized due to native version tracking)<br>Supports scheduling and dependency management within pipelines"
+      }
+    ]
+  },
+  "Data Governance": {
+    "title": "Data Governance",
+    "image": "/images/data-governance.jpg",
+    "tags": [
+      "IoT",
+      "Data Lake",
+      "Integration"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Connected multiple IoT data sources into a centralized data lake using NiFi and MinIO."
+      }
+    ]
+  },
+  "feedback-dashboard": {
+    "title": "Customer Feedback Dashboard",
+    "image": "../images/project-feedback.png",
+    "tags": [
+      "Survey",
+      "Sentiment",
+      "Dashboard"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Built Power BI dashboard to analyze customer satisfaction trends from surveys."
+      }
+    ]
+  },
+  "campaign-performance-analysis": {
+    "title": "Campaign Performance Analysis",
+    "image": "../images/project-campaign.png",
+    "tags": [
+      "Marketing",
+      "A/B Test",
+      "Budget Optimization"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Analyzed campaign variations using A/B testing to inform budget decisions."
+      }
+    ]
+  },
+  "operational-kpi-tracking": {
+    "title": "Operational KPI Tracking",
+    "image": "../images/project-kpi.png",
+    "tags": [
+      "KPI",
+      "Sales",
+      "Service"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Created sales and service performance dashboards for internal tracking."
+      }
+    ]
+  },
+  "bi-sales-performance": {
+    "title": "Sales Performance Dashboard",
+    "image": "../images/bi-sales-dashboard.png",
+    "tags": [
+      "Sales",
+      "Power BI",
+      "Dashboard"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Designed Power BI dashboards that provide sales KPI breakdowns by region, product line, and time."
+      }
+    ]
+  },
+  "bi-customer-segmentation": {
+    "title": "Customer Segmentation Report",
+    "image": "../images/bi-customer-segmentation.png",
+    "tags": [
+      "Segmentation",
+      "Customer Behavior",
+      "Analytics"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Clustered customers using RFM metrics and behavior patterns to drive personalized marketing strategies."
+      }
+    ]
+  },
+  "bi-kpi-overview": {
+    "title": "Executive KPI Overview",
+    "image": "../images/bi-kpi-overview.png",
+    "tags": [
+      "Executive",
+      "Dashboard",
+      "KPI"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Built summary dashboards for executives to monitor company-wide KPIs in real-time."
+      }
+    ]
+  },
+  "marketing-insight-framework": {
+    "title": "Marketing Insight Framework",
+    "image": "../images/data-strategy-marketing.png",
+    "tags": [
+      "Marketing",
+      "Data-Driven",
+      "Performance"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Built a strategic framework for analyzing marketing campaign effectiveness across platforms."
+      }
+    ]
+  },
+  "event-analytics-dashboard": {
+    "title": "Event Analytics Dashboard",
+    "image": "../images/data-strategy-event.png",
+    "tags": [
+      "IoT",
+      "Analytics",
+      "Event"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Analyzed real-time traffic and zone usage using IoT data and displayed results in Power BI."
+      }
+    ]
+  },
+  "decision-intelligence-system": {
+    "title": "Decision Intelligence System",
+    "image": "../images/data-strategy-decision.png",
+    "tags": [
+      "AI",
+      "Automation",
+      "Decision Support"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Developed logic flows and automated actions triggered by analytical thresholds and forecasts."
+      }
+    ]
+  },
+  "chatbot-analytics-pipeline": {
+    "title": "Chatbot Analytics Pipeline",
+    "image": "../images/data-product-chatbot.png",
+    "tags": [
+      "Chatbot",
+      "ETL",
+      "Datamart"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Extracted conversation logs and funneled data into Datamart to derive user engagement insights."
+      }
+    ]
+  },
+  "self-service-report-generator": {
+    "title": "Self-Service Report Generator",
+    "image": "../images/data-product-reportgen.png",
+    "tags": [
+      "SQL",
+      "Power BI",
+      "Automation"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Enabled internal users to generate reports dynamically from multiple databases using simple filters."
+      }
+    ]
+  },
+  "customer-feedback-hub": {
+    "title": "Customer Feedback Hub",
+    "image": "../images/data-product-feedback.png",
+    "tags": [
+      "Feedback",
+      "Integration",
+      "Customer Voice"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Centralized survey, support, and online reviews into a hub for product and service improvements."
+      }
+    ]
+  },
+"gcp-certification": {
+  "title": "Google Cloud Certified Associate",
+  "image": "../images/gcp-cert.png",
+  "tags": ["GCP", "Cloud", "Infrastructure"],
+  "content": [
+    {
+      "type": "text",
+      "value": "Demonstrated foundational knowledge of Google Cloud services and architecture."
+    },
+    {
+      "type": "image",
+      "value": "../images/gcp-diagram.png",
+      "caption": "GCP Service Overview"
+    },
+    {
+      "type": "text",
+      "value": "This certification affirms capability to manage cloud-native apps and services in GCP."
+    }
+  ]
+},
+"azure-certification": {
+  "title": "Azure Fundamentals",
+  "image": "../images/azure-cert.png",
+  "tags": ["Azure", "Cloud", "Fundamentals"],
+  "content": [
+    {
+      "type": "text",
+      "value": "Certified on core Azure concepts, pricing models, and governance tools."
+    },
+    {
+      "type": "image",
+      "value": "../images/azure-overview.png",
+      "caption": "Azure Cloud Foundations"
+    },
+    {
+      "type": "text",
+      "value": "This cert reflects understanding of Azure’s key services and cloud principles."
+    }
+  ]
+},
+"aws-certification": {
+  "title": "AWS Solutions Architect Associate",
+  "image": "../images/aws-cert.png",
+  "tags": ["AWS", "Cloud", "Architecture"],
+  "content": [
+    {
+      "type": "text",
+      "value": "Designed scalable cloud solutions following AWS best practices."
+    },
+    {
+      "type": "image",
+      "value": "../images/aws-diagram.png",
+      "caption": "AWS Architecture"
+    },
+    {
+      "type": "text",
+      "value": "This certification validates expertise in deploying secure cloud solutions."
+    }
+  ]
+}
+}

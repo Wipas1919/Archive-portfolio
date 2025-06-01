@@ -1,0 +1,586 @@
+{
+  "End-to-End Data Engineering Journey": {
+    "title": "End-to-End Data Engineering Journey",
+    "image": "/images/cover-data-engineering.jpg",
+    "tags": [
+      "Python",
+      "SQL",
+      "ETL",
+      "Windmill",
+      "Docker",
+      "Portainer",
+      "Pipeline Optimization",
+      "Data Modeling",
+      "Data Mart",
+      "Data Governance",
+      "Power BI",
+      "Infrastructure",
+      "Ubuntu",
+      "Bash",
+      "Shell",
+      "Linux CLI",
+      "Server Setup",
+      "Data Security"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "# My End-to-End Data Engineering Journey"
+      },
+      {
+        "type": "text",
+        "value": "## Background & Motivation"
+      },
+      {
+        "type": "text",
+        "value": "Upon joining this project, I encountered a significant challenge—organizational data was highly fragmented across multiple sources. The existing infrastructure lacked any centralized or automated data pipeline. Most data remained siloed within disparate systems and was primarily analyzed through manually maintained Excel files, leading to underutilization of valuable insights."
+      },
+      {
+        "type": "text",
+        "value": "At that time, the organization was just beginning to explore data‑driven practices. Our data team consisted of only two members—my supervisor, who had initiated some foundational work, and myself. Given the lean team structure, I was expected not only to support but also to independently manage and understand the system from the ground up."
+      },
+      {
+        "type": "text",
+        "value": "The first step was to develop a **high‑level data‑domain map**, classifying datasets into key functional domains and using color‑coding to indicate onboarding status:"
+      },
+      {
+        "type": "text",
+        "value": "🟩 **Green** – Fully integrated and available via the Data Mart"
+      },
+      {
+        "type": "text",
+        "value": "🟨 **Yellow** – In progress"
+      },
+      {
+        "type": "text",
+        "value": "⬜ **Gray** – Not yet available"
+      },
+      {
+        "type": "image",
+        "value": "/images/data-en-1.jpg",
+        "caption": "Domain Overview"
+      },
+      {
+        "type": "text",
+        "value": "Recognizing the scale of fragmentation, I set out to build an **end‑to‑end data platform** covering ingestion, transformation, modeling, and reporting. The goals:"
+      },
+      {
+        "type": "text",
+        "value": "- Scalable, automated pipelines\n- Clean, reliable data\n- Minimal manual wrangling\n- Faster time‑to‑insight"
+      },
+      {
+        "type": "text",
+        "value": "## Phase 1 — Ubuntu Server & Database Foundation"
+      },
+      {
+        "type": "text",
+        "value": "Collaborated with the Infrastructure team to provision an on‑premises **Ubuntu Server**, harden the OS, configure firewall rules, SSH, port‑forwarding, and align with backup policy."
+      },
+      {
+        "type": "text",
+        "value": "Adopted **Portainer** for container orchestration, making service deployment modular and maintenance‑friendly."
+      },
+      {
+        "type": "text",
+        "value": "### Database Setup"
+      },
+      {
+        "type": "text",
+        "value": "Deployed a **MySQL** relational database as the Raw/Staging layer—ideal for high‑frequency IoT sensor logs. Used **DBeaver** for DDL scripting, exploratory SQL, and multi‑environment connection management."
+      },
+      {
+        "type": "image",
+        "value": "/images/data-en-2.jpg",
+        "caption": "Initial DB Setup"
+      },
+      {
+        "type": "text",
+        "value": "## Phase 2 — Scalable ETL Pipeline with Windmill"
+      },
+      {
+        "type": "text",
+        "value": "Selected **Windmill** for orchestration due to its low learning curve and lightweight UI/UX—a pragmatic choice before scaling to Apache Airflow."
+      },
+      {
+        "type": "text",
+        "value": "### Rationale Behind Tool Selection"
+      },
+      {
+        "type": "text",
+        "value": "- Low learning curve for Dev/IT\n- Built‑in scheduling & secret‑management\n- Faster setup than heavyweight orchestrators"
+      },
+      {
+        "type": "text",
+        "value": "### ETL Architecture Overview"
+      },
+      {
+        "type": "text",
+        "value": "- **Extract** – Ingest via REST API, webhooks, file drops\n- **Transform** – Clean, deduplicate, apply business logic\n- **Load** – Write into target relational store for analytics"
+      },
+      {
+        "type": "text",
+        "value": "### Extract"
+      },
+      {
+        "type": "text",
+        "value": "Negotiated with Data Owners, vendors, and Infra to gain access, manage auth, and configure network routes for stable ingestion."
+      },
+      {
+        "type": "text",
+        "value": "### Transform"
+      },
+      {
+        "type": "text",
+        "value": "Delivered **analysis‑ready tables** to minimize complex DAX in Power BI, improving data literacy and speed."
+      },
+      {
+        "type": "text",
+        "value": "### Load"
+      },
+      {
+        "type": "text",
+        "value": "Implemented full‑refresh, incremental, and chunked loads; modularized scripts for easier debugging."
+      },
+      {
+        "type": "text",
+        "value": "### Scheduler & Monitoring"
+      },
+      {
+        "type": "text",
+        "value": "Used cron syntax for timings and email alerts for failure notifications, ensuring rapid MTTR."
+      },
+      {
+        "type": "text",
+        "value": "### Security & Credential Management"
+      },
+      {
+        "type": "text",
+        "value": "Stored IAM creds and API keys as encrypted secrets in Windmill’s vault, decoupling logic from sensitive configs."
+      },
+      {
+        "type": "image",
+        "value": "/images/etl-windmill.jpg",
+        "caption": "Windmill ETL Flow"
+      },
+      {
+        "type": "text",
+        "value": "## Phase 3 — Building the Data Mart"
+      },
+      {
+        "type": "text",
+        "value": "Created curated **Data Marts** as a semantic layer for self‑service BI, isolating all PII and applying anonymization (e.g., one‑hot encoding)."
+      },
+      {
+        "type": "text",
+        "value": "### Governance & Security"
+      },
+      {
+        "type": "text",
+        "value": "- Segregated sensitive data\n- Applied governance tags\n- Ensured analytics‑ready anonymity"
+      },
+      {
+        "type": "text",
+        "value": "### Architecture & Performance"
+      },
+      {
+        "type": "text",
+        "value": "Windmill flows ran asynchronously and in parallel; sub‑flows encapsulated reusable logic, which cut ETL runtime and simplified onboarding."
+      },
+      {
+        "type": "image",
+        "value": "/images/data-mart.jpg",
+        "caption": "Data Mart Pipeline"
+      },
+      {
+        "type": "text",
+        "value": "### BI Integration"
+      },
+      {
+        "type": "text",
+        "value": "Power BI dashboards consumed the Data Mart, providing drill‑downs, trend views, and KPI tracking with minimal DAX."
+      },
+      {
+        "type": "text",
+        "value": "## Phase 4 — Visualization & Insight Delivery"
+      },
+      {
+        "type": "text",
+        "value": "Split deliverables into **Dashboard & Monitoring** (handed to BAU) and **Deep‑Dive Reporting** (owned by the Analytics team)."
+      },
+      {
+        "type": "text",
+        "value": "### Dashboard & Monitoring"
+      },
+      {
+        "type": "text",
+        "value": "Connected PostgreSQL Data Mart to Power BI; delivered user‑friendly dashboards with built‑in measures for growth, top‑N, and YoY analysis. Trained departments for low‑code ownership."
+      },
+      {
+        "type": "text",
+        "value": "### Reporting & Advanced Analytics"
+      },
+      {
+        "type": "text",
+        "value": "Analytics team leveraged the semantic model for ad‑hoc and cross‑domain deep dives, feeding strategic decision‑making."
+      },
+      {
+        "type": "image",
+        "value": "/images/dashboard.jpg",
+        "caption": "Power BI Dashboard"
+      },
+      {
+        "type": "text",
+        "value": "### Governance & Access Control"
+      },
+      {
+        "type": "text",
+        "value": "Implemented role‑based access in dedicated Power BI Workspaces, aligned with the organization’s Data Catalog."
+      },
+      {
+        "type": "text",
+        "value": "**Summary** — Faster insights, reduced analytics backlog, and higher data literacy across units."
+      },
+      {
+        "type": "text",
+        "value": "## Challenges & Deep‑Dive Learnings"
+      },
+      {
+        "type": "text",
+        "value": "### System Configuration & Troubleshooting"
+      },
+      {
+        "type": "text",
+        "value": "- Debugged YAML & Docker issues\n- Resolved Portainer networking & version conflicts"
+      },
+      {
+        "type": "text",
+        "value": "### ETL Pipeline Debugging"
+      },
+      {
+        "type": "text",
+        "value": "- Tracked failures from source to Windmill, built alerts & fallback strategies"
+      },
+      {
+        "type": "text",
+        "value": "### Query & Workflow Optimization"
+      },
+      {
+        "type": "text",
+        "value": "- Tuned heavy SQL & Python, added batching, retries, and memory‑safe logic"
+      },
+      {
+        "type": "text",
+        "value": "### Business Logic Reconstruction"
+      },
+      {
+        "type": "text",
+        "value": "- Reverse‑engineered legacy tables, validated rules with stakeholders"
+      },
+      {
+        "type": "image",
+        "value": "/images/challenges.jpg",
+        "caption": "Debugging Session"
+      },
+      {
+        "type": "text",
+        "value": "## Final Outcome & Personal Reflection"
+      },
+      {
+        "type": "text",
+        "value": "### Final Outcome"
+      },
+      {
+        "type": "text",
+        "value": "Delivered a robust **end‑to‑end data infrastructure**:\n✅ On‑prem Ubuntu & Portainer\n✅ Modular Windmill ETL to MySQL/PostgreSQL\n✅ Secure, anonymous Data Marts\n✅ Power BI self‑service dashboards\n✅ 40% reduction in manual reporting workload"
+      },
+      {
+        "type": "text",
+        "value": "### Personal Reflection"
+      },
+      {
+        "type": "text",
+        "value": "Gained end‑to‑end ownership, mastered troubleshooting under constraints, and deepened appreciation for data governance and user‑centric design. This journey reaffirmed my passion for turning raw data into business value."
+      },
+      {
+        "type": "image",
+        "value": "/images/final.jpg",
+        "caption": "Project Wrap‑up"
+      }
+    ]
+  },
+  "real-time-dashboard": {
+    "title": "Real-Time Dashboard",
+    "image": "../images/project-dashboard.png",
+    "tags": [
+      "Power BI",
+      "Realtime",
+      "Dashboard"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Built a real-time dashboard in Power BI connected to event streams."
+      },
+      {
+        "type": "image",
+        "value": "../images/realtime-dashboard-sample.png",
+        "caption": "Live Dashboard Snapshot"
+      }
+    ]
+  },
+  "data-lake-integration": {
+    "title": "Data Lake Integration",
+    "image": "../images/project-datalake.png",
+    "tags": [
+      "IoT",
+      "Data Lake",
+      "Integration"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Connected multiple IoT data sources into a centralized data lake using NiFi and MinIO."
+      }
+    ]
+  },
+  "feedback-dashboard": {
+    "title": "Customer Feedback Dashboard",
+    "image": "../images/project-feedback.png",
+    "tags": [
+      "Survey",
+      "Sentiment",
+      "Dashboard"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Built Power BI dashboard to analyze customer satisfaction trends from surveys."
+      }
+    ]
+  },
+  "campaign-performance-analysis": {
+    "title": "Campaign Performance Analysis",
+    "image": "../images/project-campaign.png",
+    "tags": [
+      "Marketing",
+      "A/B Test",
+      "Budget Optimization"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Analyzed campaign variations using A/B testing to inform budget decisions."
+      }
+    ]
+  },
+  "operational-kpi-tracking": {
+    "title": "Operational KPI Tracking",
+    "image": "../images/project-kpi.png",
+    "tags": [
+      "KPI",
+      "Sales",
+      "Service"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Created sales and service performance dashboards for internal tracking."
+      }
+    ]
+  },
+  "bi-sales-performance": {
+    "title": "Sales Performance Dashboard",
+    "image": "../images/bi-sales-dashboard.png",
+    "tags": [
+      "Sales",
+      "Power BI",
+      "Dashboard"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Designed Power BI dashboards that provide sales KPI breakdowns by region, product line, and time."
+      }
+    ]
+  },
+  "bi-customer-segmentation": {
+    "title": "Customer Segmentation Report",
+    "image": "../images/bi-customer-segmentation.png",
+    "tags": [
+      "Segmentation",
+      "Customer Behavior",
+      "Analytics"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Clustered customers using RFM metrics and behavior patterns to drive personalized marketing strategies."
+      }
+    ]
+  },
+  "bi-kpi-overview": {
+    "title": "Executive KPI Overview",
+    "image": "../images/bi-kpi-overview.png",
+    "tags": [
+      "Executive",
+      "Dashboard",
+      "KPI"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Built summary dashboards for executives to monitor company-wide KPIs in real-time."
+      }
+    ]
+  },
+  "marketing-insight-framework": {
+    "title": "Marketing Insight Framework",
+    "image": "../images/data-strategy-marketing.png",
+    "tags": [
+      "Marketing",
+      "Data-Driven",
+      "Performance"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Built a strategic framework for analyzing marketing campaign effectiveness across platforms."
+      }
+    ]
+  },
+  "event-analytics-dashboard": {
+    "title": "Event Analytics Dashboard",
+    "image": "../images/data-strategy-event.png",
+    "tags": [
+      "IoT",
+      "Analytics",
+      "Event"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Analyzed real-time traffic and zone usage using IoT data and displayed results in Power BI."
+      }
+    ]
+  },
+  "decision-intelligence-system": {
+    "title": "Decision Intelligence System",
+    "image": "../images/data-strategy-decision.png",
+    "tags": [
+      "AI",
+      "Automation",
+      "Decision Support"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Developed logic flows and automated actions triggered by analytical thresholds and forecasts."
+      }
+    ]
+  },
+  "chatbot-analytics-pipeline": {
+    "title": "Chatbot Analytics Pipeline",
+    "image": "../images/data-product-chatbot.png",
+    "tags": [
+      "Chatbot",
+      "ETL",
+      "Datamart"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Extracted conversation logs and funneled data into Datamart to derive user engagement insights."
+      }
+    ]
+  },
+  "self-service-report-generator": {
+    "title": "Self-Service Report Generator",
+    "image": "../images/data-product-reportgen.png",
+    "tags": [
+      "SQL",
+      "Power BI",
+      "Automation"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Enabled internal users to generate reports dynamically from multiple databases using simple filters."
+      }
+    ]
+  },
+  "customer-feedback-hub": {
+    "title": "Customer Feedback Hub",
+    "image": "../images/data-product-feedback.png",
+    "tags": [
+      "Feedback",
+      "Integration",
+      "Customer Voice"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Centralized survey, support, and online reviews into a hub for product and service improvements."
+      }
+    ]
+  },
+"gcp-certification": {
+  "title": "Google Cloud Certified Associate",
+  "image": "../images/gcp-cert.png",
+  "tags": ["GCP", "Cloud", "Infrastructure"],
+  "content": [
+    {
+      "type": "text",
+      "value": "Demonstrated foundational knowledge of Google Cloud services and architecture."
+    },
+    {
+      "type": "image",
+      "value": "../images/gcp-diagram.png",
+      "caption": "GCP Service Overview"
+    },
+    {
+      "type": "text",
+      "value": "This certification affirms capability to manage cloud-native apps and services in GCP."
+    }
+  ]
+},
+"azure-certification": {
+  "title": "Azure Fundamentals",
+  "image": "../images/azure-cert.png",
+  "tags": ["Azure", "Cloud", "Fundamentals"],
+  "content": [
+    {
+      "type": "text",
+      "value": "Certified on core Azure concepts, pricing models, and governance tools."
+    },
+    {
+      "type": "image",
+      "value": "../images/azure-overview.png",
+      "caption": "Azure Cloud Foundations"
+    },
+    {
+      "type": "text",
+      "value": "This cert reflects understanding of Azure’s key services and cloud principles."
+    }
+  ]
+},
+"aws-certification": {
+  "title": "AWS Solutions Architect Associate",
+  "image": "../images/aws-cert.png",
+  "tags": ["AWS", "Cloud", "Architecture"],
+  "content": [
+    {
+      "type": "text",
+      "value": "Designed scalable cloud solutions following AWS best practices."
+    },
+    {
+      "type": "image",
+      "value": "../images/aws-diagram.png",
+      "caption": "AWS Architecture"
+    },
+    {
+      "type": "text",
+      "value": "This certification validates expertise in deploying secure cloud solutions."
+    }
+  ]
+}
+}

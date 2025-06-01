@@ -1,0 +1,332 @@
+{
+  "End-to-End Data Engineering Journey": {
+    "title": "End-to-End Data Engineering Journey",
+    "image": "..",
+    "tags": [
+      "Python",
+      "SQL",
+      "ETL",
+      "Orchestration ETL",
+      "Pipeline Optimization",
+      "Data Storage Layer",
+      "Data Modeling",
+      "Infrastructure",
+      "Bash",
+      "Shell",
+      "Docker",
+      "Portainer",
+      "Data Security",
+      "Server Setup"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "My End-to-End Data Engineering Journey"
+      },
+      {
+        "type": "image",
+        "value": "../images/etl-flowchart.png",
+        "caption": "Optimized ETL Workflow"
+      },
+      {
+        "type": "text",
+        "value": "Background & Motivation"
+      },
+      {
+        "type": "text",
+        "value": "Upon joining this project, I encountered a significant challenge—organizational data was highly fragmented across multiple sources. The existing infrastructure lacked any centralized or automated data pipeline. Most data remained siloed within disparate systems and was primarily analyzed through manually maintained Excel files, leading to underutilization of valuable insights."
+      },
+       {
+        "type": "text",
+        "value": "At that time, the organization was just beginning to explore data-driven practices. Our data team consisted of only two members—my supervisor, who had initiated some foundational work, and myself. Given the lean team structure, I was expected not only to support but also to independently manage and understand the system from the ground up. This led me to dive into designing and implementing core data infrastructure components."
+      },
+      {
+        "type": "text",
+        "value": "The first step was to develop a high-level data domain mapping, classifying datasets into key functional domains. I implemented a color-coded system to visually communicate the current integration status of each domain:"
+      },
+      {
+        "type": "text",
+        "value": "🟩 Green: Fully integrated and available via the data mart"
+      },
+      {
+        "type": "text",
+        "value": "🟨 Yellow: In progress"
+      }
+    ]
+  },
+  "real-time-dashboard": {
+    "title": "Real-Time Dashboard",
+    "image": "../images/project-dashboard.png",
+    "tags": [
+      "Power BI",
+      "Realtime",
+      "Dashboard"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Built a real-time dashboard in Power BI connected to event streams."
+      },
+      {
+        "type": "image",
+        "value": "../images/realtime-dashboard-sample.png",
+        "caption": "Live Dashboard Snapshot"
+      }
+    ]
+  },
+  "data-lake-integration": {
+    "title": "Data Lake Integration",
+    "image": "../images/project-datalake.png",
+    "tags": [
+      "IoT",
+      "Data Lake",
+      "Integration"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Connected multiple IoT data sources into a centralized data lake using NiFi and MinIO."
+      }
+    ]
+  },
+  "feedback-dashboard": {
+    "title": "Customer Feedback Dashboard",
+    "image": "../images/project-feedback.png",
+    "tags": [
+      "Survey",
+      "Sentiment",
+      "Dashboard"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Built Power BI dashboard to analyze customer satisfaction trends from surveys."
+      }
+    ]
+  },
+  "campaign-performance-analysis": {
+    "title": "Campaign Performance Analysis",
+    "image": "../images/project-campaign.png",
+    "tags": [
+      "Marketing",
+      "A/B Test",
+      "Budget Optimization"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Analyzed campaign variations using A/B testing to inform budget decisions."
+      }
+    ]
+  },
+  "operational-kpi-tracking": {
+    "title": "Operational KPI Tracking",
+    "image": "../images/project-kpi.png",
+    "tags": [
+      "KPI",
+      "Sales",
+      "Service"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Created sales and service performance dashboards for internal tracking."
+      }
+    ]
+  },
+  "bi-sales-performance": {
+    "title": "Sales Performance Dashboard",
+    "image": "../images/bi-sales-dashboard.png",
+    "tags": [
+      "Sales",
+      "Power BI",
+      "Dashboard"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Designed Power BI dashboards that provide sales KPI breakdowns by region, product line, and time."
+      }
+    ]
+  },
+  "bi-customer-segmentation": {
+    "title": "Customer Segmentation Report",
+    "image": "../images/bi-customer-segmentation.png",
+    "tags": [
+      "Segmentation",
+      "Customer Behavior",
+      "Analytics"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Clustered customers using RFM metrics and behavior patterns to drive personalized marketing strategies."
+      }
+    ]
+  },
+  "bi-kpi-overview": {
+    "title": "Executive KPI Overview",
+    "image": "../images/bi-kpi-overview.png",
+    "tags": [
+      "Executive",
+      "Dashboard",
+      "KPI"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Built summary dashboards for executives to monitor company-wide KPIs in real-time."
+      }
+    ]
+  },
+  "marketing-insight-framework": {
+    "title": "Marketing Insight Framework",
+    "image": "../images/data-strategy-marketing.png",
+    "tags": [
+      "Marketing",
+      "Data-Driven",
+      "Performance"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Built a strategic framework for analyzing marketing campaign effectiveness across platforms."
+      }
+    ]
+  },
+  "event-analytics-dashboard": {
+    "title": "Event Analytics Dashboard",
+    "image": "../images/data-strategy-event.png",
+    "tags": [
+      "IoT",
+      "Analytics",
+      "Event"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Analyzed real-time traffic and zone usage using IoT data and displayed results in Power BI."
+      }
+    ]
+  },
+  "decision-intelligence-system": {
+    "title": "Decision Intelligence System",
+    "image": "../images/data-strategy-decision.png",
+    "tags": [
+      "AI",
+      "Automation",
+      "Decision Support"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Developed logic flows and automated actions triggered by analytical thresholds and forecasts."
+      }
+    ]
+  },
+  "chatbot-analytics-pipeline": {
+    "title": "Chatbot Analytics Pipeline",
+    "image": "../images/data-product-chatbot.png",
+    "tags": [
+      "Chatbot",
+      "ETL",
+      "Datamart"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Extracted conversation logs and funneled data into Datamart to derive user engagement insights."
+      }
+    ]
+  },
+  "self-service-report-generator": {
+    "title": "Self-Service Report Generator",
+    "image": "../images/data-product-reportgen.png",
+    "tags": [
+      "SQL",
+      "Power BI",
+      "Automation"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Enabled internal users to generate reports dynamically from multiple databases using simple filters."
+      }
+    ]
+  },
+  "customer-feedback-hub": {
+    "title": "Customer Feedback Hub",
+    "image": "../images/data-product-feedback.png",
+    "tags": [
+      "Feedback",
+      "Integration",
+      "Customer Voice"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "value": "Centralized survey, support, and online reviews into a hub for product and service improvements."
+      }
+    ]
+  },
+"gcp-certification": {
+  "title": "Google Cloud Certified Associate",
+  "image": "../images/gcp-cert.png",
+  "tags": ["GCP", "Cloud", "Infrastructure"],
+  "content": [
+    {
+      "type": "text",
+      "value": "Demonstrated foundational knowledge of Google Cloud services and architecture."
+    },
+    {
+      "type": "image",
+      "value": "../images/gcp-diagram.png",
+      "caption": "GCP Service Overview"
+    },
+    {
+      "type": "text",
+      "value": "This certification affirms capability to manage cloud-native apps and services in GCP."
+    }
+  ]
+},
+"azure-certification": {
+  "title": "Azure Fundamentals",
+  "image": "../images/azure-cert.png",
+  "tags": ["Azure", "Cloud", "Fundamentals"],
+  "content": [
+    {
+      "type": "text",
+      "value": "Certified on core Azure concepts, pricing models, and governance tools."
+    },
+    {
+      "type": "image",
+      "value": "../images/azure-overview.png",
+      "caption": "Azure Cloud Foundations"
+    },
+    {
+      "type": "text",
+      "value": "This cert reflects understanding of Azure’s key services and cloud principles."
+    }
+  ]
+},
+"aws-certification": {
+  "title": "AWS Solutions Architect Associate",
+  "image": "../images/aws-cert.png",
+  "tags": ["AWS", "Cloud", "Architecture"],
+  "content": [
+    {
+      "type": "text",
+      "value": "Designed scalable cloud solutions following AWS best practices."
+    },
+    {
+      "type": "image",
+      "value": "../images/aws-diagram.png",
+      "caption": "AWS Architecture"
+    },
+    {
+      "type": "text",
+      "value": "This certification validates expertise in deploying secure cloud solutions."
+    }
+  ]
+}
+}

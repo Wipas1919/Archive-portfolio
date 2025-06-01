@@ -1,0 +1,154 @@
+{
+  "data-engineer": {
+    "projects": [
+      {
+        "title": "End-to-End Data Engineering Journey",
+        "slug": "End-to-End Data Engineering Journey",
+        "description": "Full-stack ETL pipeline implementation",
+        "image": "/images/data-engineers.jpg"
+      },
+      {
+        "title": "End-to-End Data Infrastructure Planning",
+        "slug": "End-to-End Data Infrastructure Planning",
+        "description": "Process Design Fundamental",
+        "image": "/images/data-foundamatal.jpg"
+      },
+      {
+        "title": "Data Governance",
+        "slug": "Data Governance",
+        "description": "Designing and implementing a hybrid data governance framework",
+        "image": "/images/data-governance.jpg"
+      }
+    ]
+  },
+  "business-analysis": {
+    "title": "Business Analysis",
+    "description": "Transform data into insights for decision-making.",
+    "image": "../images/ba.svg",
+    "overview": "Analyzed survey and operational data to support marketing strategy.",
+    "contributions": [
+      "Designed data collection forms",
+      "Used SQL & Power BI for analysis",
+      "Presented insights to leadership"
+    ],
+    "tools": [
+      "Excel",
+      "SQL",
+      "Power BI",
+      "Survey Analysis"
+    ],
+    "impact": "Helped increase campaign engagement by 30%",
+    "projects": [
+      {
+        "title": "post-event analysis",
+        "slug": "post-event analysis",
+        "description": "Built interactive dashboards to monitor sentiment trends.",
+        "image": "/images/post-event.png"
+      },
+      {
+        "title": "Consulting Desing Survey",
+        "slug": "campaign-performance-analysis",
+        "description": "In the process!",
+        "image": "/images/upcoming-cover.png"
+      },
+      {
+        "title": "New insights are cooking",
+        "slug": "operational-kpi-tracking",
+        "description": "In the process!",
+        "image": "/images/upcoming-cover.png"
+      }
+    ]
+  },
+  "bi-solutions": {
+    "title": "Business Intelligent",
+    "projects": [
+      {
+        "title": "Dashboard Routine",
+        "description": "Designed Power BI dashboard to visualize sales KPIs across regions.",
+        "image": "/images/upcoming-cover.png",
+        "slug": "bi-sales-performance"
+      },
+      {
+        "title": "Dashboard Near-real time",
+        "description": "Used data visualization to cluster customer segments based on behavior.",
+        "image": "../images/bi-customer-segmentation.png",
+        "slug": "bi-customer-segmentation"
+      },
+      {
+        "title": "KPI Overview",
+        "description": "Built interactive dashboards to summarize high-level KPIs for executives.",
+        "image": "../images/bi-kpi-overview.png",
+        "slug": "bi-kpi-overview"
+      }
+    ]
+  },
+  "strategic-data": {
+    "title": "Data-Driven",
+    "projects": [
+      {
+        "title": "Assistant Speaker Trend Technoligies ",
+        "description": "Developed a data-driven framework to analyze campaign performance across channels.",
+        "image": "../images/data-strategy-marketing.png",
+        "slug": "marketing-insight-framework"
+      },
+      {
+        "title": "Power BI Training",
+        "description": "Created visualizations from IoT sensor data to optimize event space usage.",
+        "image": "../images/data-strategy-event.png",
+        "slug": "event-analytics-dashboard"
+      },
+      {
+        "title": "Comming Soon!",
+        "description": "Designed end-to-end system for converting analytics into automated decisions.",
+        "image": "../images/data-strategy-decision.png",
+        "slug": "decision-intelligence-system"
+      }
+    ]
+  },
+  "data-integration": {
+    "title": "Data Product",
+    "projects": [
+      {
+        "title": "Chat AI for web-event",
+        "description": "Built backend pipeline to integrate chatbot logs into Datamart for insights.",
+        "image": "../images/data-product-chatbot.png",
+        "slug": "chatbot-analytics-pipeline"
+      },
+      {
+        "title": "Hr Recuddtor Macthing",
+        "description": "Created dynamic reporting tool from MySQL and PostgreSQL for internal teams.",
+        "image": "../images/data-product-reportgen.png",
+        "slug": "self-service-report-generator"
+      },
+      {
+        "title": "Comming Soon!",
+        "description": "Aggregated customer voice data into a single source for product decisions.",
+        "image": "../images/data-product-feedback.png",
+        "slug": "customer-feedback-hub"
+      }
+    ]
+  },
+  "cloud-cert": {
+  "title": "Certification",
+  "projects": [
+    {
+      "title": "Comming Soon!",
+      "description": "Demonstrated foundational knowledge of GCP services and architecture.",
+      "image": "../images/gcp-cert.png",
+      "slug": "gcp-certification"
+    },
+    {
+      "title": "Comming Soon!",
+      "description": "Comming Soon!",
+      "image": "../images/aws-cert.png",
+      "slug": "aws-certification"
+    },
+    {
+      "title": "Comming Soon!",
+      "description": "Comming Soon!",
+      "image": "../images/azure-cert.png",
+      "slug": "azure-certification"
+    }
+  ]
+}
+}

@@ -1,0 +1,203 @@
+<!-- Cleaned and updated on 2025-05-25 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business Intelligence | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/main.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .cover {
+      background: linear-gradient(135deg, #3479be, #e9ecef);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .cover h1 {
+      font-size: 48px;
+      color: #fc5246;
+      margin-bottom: 20px;
+    }
+    .cover p {
+      font-size: 20px;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .project-cards h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .card {
+      display: block;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      padding: 24px;
+      text-align: center;
+      transition: transform 0.3s;
+      text-decoration: none !important;
+      color: inherit !important;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+
+    .card h4 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 15px;
+    }
+
+    /* Remove visited/hover/focus/active styles */
+    .card:visited,
+    .card:hover,
+    .card:focus,
+    .card:active,
+    .card *,
+    .card *:visited,
+    .card *:hover,
+    .card *:focus,
+    .card *:active {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+
+    .dropdown-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      font-weight: 600;
+      cursor: pointer;
+      color: #222;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #ffffff;
+      min-width: 220px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      padding: 10px 0;
+      z-index: 999;
+    }
+
+    .dropdown-wrapper:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 12px 20px;
+      color: #222;
+      text-decoration: none;
+      font-size: 15px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #eaeaea;
+      color: #fd3a2d;
+    }
+  </style>
+</head>
+<body>
+  <div id="page-loader"><div class="spinner"></div></div>
+
+  <header>
+    <div class="container">
+      <h1 class="logo" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 28px; color: #fc5246;">Portfolio</h1>
+      <nav class="nav-right">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#about">About me</a>
+        <a href="../index.html#contact">Contact</a>
+        <div class="dropdown-wrapper">
+          <a href="#" class="dropbtn">Collection</a>
+          <div class="dropdown-content">
+            <a href="data-engineer.html">Data Engineer</a>
+            <a href="business-analysis.html">Business Analysis</a>
+            <a href="bi-solutions.html">Business Intelligent</a>
+            <a href="strategic-data.html">Data-Driven</a>
+            <a href="cloud-cert.html">Certification</a>
+            <a href="data-integration.html">Data Product</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cover / Hero Section -->
+  <section class="cover">
+    <h1>Business Intelligence Portfolio</h1>
+    <p>Discover how I’ve built interactive dashboards and analytical tools that unlock business value.</p>
+  </section>
+
+  <!-- Project Cards Section -->
+  <section class="project-cards container" id="project-cards">
+    <div class="card-grid" id="card-container"></div>
+  </section>
+
+  <script>
+    const cardsContainer = document.getElementById("card-container");
+    const projectId = "bi-solutions";
+
+    fetch("../data/projects.json")
+      .then(res => res.json())
+      .then(data => {
+        const p = data[projectId];
+        if (!p || !p.projects?.length) {
+          cardsContainer.innerHTML = "<p>No projects found.</p>";
+          return;
+        }
+        cardsContainer.innerHTML = p.projects.map(proj => `
+          <a href="project.html?id=${proj.slug}" class="card">
+            <img src="${proj.image}" alt="${proj.title}" />
+            <h4>${proj.title}</h4>
+            <p>${proj.description}</p>
+          </a>
+        `).join("");
+      })
+      .catch(err => {
+        cardsContainer.innerHTML = "<p>Error loading data.</p>";
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
