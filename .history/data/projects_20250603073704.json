@@ -42,22 +42,20 @@
       {
         "title": "post-event analysis",
         "slug": "post-event analysis",
-        "description": "Special Analysis post-event for MICE Business",
+        "description": "Built interactive dashboards to monitor sentiment trends.",
         "image": "/images/post-event.png"
       },
       {
         "title": "New insights are cooking!",
-        "slug": "campaign-performance-analysis",
+        // "slug": "campaign-performance-analysis",
         "description": "preparing something worth the wait.",
-        "image": "/images/upcoming-cover.png",
-        "disabled": true
+        "image": "/images/upcoming-cover.png"
       },
       {
         "title": "New insights are cooking!",
         "slug": "operational-kpi-tracking",
         "description": "preparing something worth the wait.",
-        "image": "/images/upcoming-cover.png",
-        "disabled": true
+        "image": "/images/upcoming-cover.png"
       }
     ]
   },
@@ -66,22 +64,21 @@
     "projects": [
       {
         "title": "Dashboard Routine",
-        "description": "Design a Power BI dashboard that helps with routine tasks for the marketing team.",
+        "description": "Designed Power BI dashboard to visualize sales KPIs across regions.",
         "image": "/images/bi-routine-1.png",
         "slug": "bi-sales-performance"
       },
       {
-        "title": "Smart Footfall Dashboard for Event Insight & Optimization",
-        "description": "Used data visualization to monitoring data when event strat.",
+        "title": "Dashboard Near-real time",
+        "description": "Used data visualization to cluster customer segments based on behavior.",
         "image": "/images/bi-routine-2.png",
         "slug": "bi-customer-segmentation"
       },
       {
-        "title": "New insights are cooking!",
-        "description": "preparing something worth the wait.",
-        "image": "/images/upcoming-cover.png",
-        "slug": "bi-kpi-overview",
-        "disabled": true
+        "title": "KPI Overview",
+        "description": "Built interactive dashboards to summarize high-level KPIs for executives.",
+        "image": "/images/bi-routine-3.png",
+        "slug": "bi-kpi-overview"
       }
     ]
   },
@@ -89,14 +86,14 @@
     "title": "Data-Driven",
     "projects": [
       {
-        "title": "Internal Tech Talk & Workshop",
+        "title": "Speaker Trend Technoligies (Asistant) ",
         "description": "Data & Technologies driven.",
         "image": "/images/bi-routine-4.jpg",
         "slug": "marketing-insight-framework"
       },
       {
         "title": "Power BI Training",
-        "description": "small group training each department.",
+        "description": "Training each department small group.",
         "image": "/images/bi-routine-5.jpg",
         "slug": "event-analytics-dashboard"
       },
@@ -104,8 +101,7 @@
         "title": "New insights are cooking!",
         "description": "preparing something worth the wait.",
         "image": "/images/upcoming-cover.png",
-        "slug": "decision-intelligence-system",
-        "disabled": true
+        "slug": "decision-intelligence-system"
       }
     ]
   },
@@ -119,18 +115,16 @@
         "slug": "chatbot-analytics-pipeline"
       },
       {
-        "title": "New insights are cooking!",
-        "description": "preparing something worth the wait.",
+        "title": "Hr Recuddtor Macthing",
+        "description": "Created dynamic reporting tool from MySQL and PostgreSQL for internal teams.",
         "image": "/images/upcoming-cover.png",
-        "slug": "self-service-report-generator",
-        "disabled": true
+        "slug": "self-service-report-generator"
       },
       {
         "title": "New insights are cooking!",
         "description": "preparing something worth the wait.",
         "image": "/images/upcoming-cover.png",
-        "slug": "customer-feedback-hub",
-        "disabled": true
+        "slug": "customer-feedback-hub"
       }
     ]
   },
@@ -141,22 +135,19 @@
       "title": "New Certificate are cooking!",
       "description": "preparing something worth the wait.",
       "image": "/images/upcoming-cover.png",
-      "slug": "gcp-certification",
-      "disabled": true
+      "slug": "gcp-certification"
     },
     {
       "title": "New Certificate are cooking!",
       "description": "preparing something worth the wait.",
       "image": "/images/upcoming-cover.png",
-      "slug": "aws-certification",
-      "disabled": true
+      "slug": "aws-certification"
     },
     {
       "title": "New Certificate are cooking!",
       "description": "preparing something worth the wait.",
       "image": "/images/upcoming-cover.png",
-      "slug": "azure-certification",
-      "disabled": true
+      "slug": "azure-certification"
     }
   ]
 }

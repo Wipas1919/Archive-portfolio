@@ -79,9 +79,8 @@
       {
         "title": "New insights are cooking!",
         "description": "preparing something worth the wait.",
-        "image": "/images/upcoming-cover.png",
-        "slug": "bi-kpi-overview",
-        "disabled": true
+        "image": "/images/bi-routine-3.png",
+        "slug": "bi-kpi-overview"
       }
     ]
   },
@@ -89,7 +88,7 @@
     "title": "Data-Driven",
     "projects": [
       {
-        "title": "Internal Tech Talk & Workshop",
+        "title": "Speaker Trend Technoligies (Asistant) ",
         "description": "Data & Technologies driven.",
         "image": "/images/bi-routine-4.jpg",
         "slug": "marketing-insight-framework"

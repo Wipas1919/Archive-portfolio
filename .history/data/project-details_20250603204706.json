@@ -695,34 +695,12 @@
       "Public Speaking",
       "Workshop Facilitation",
       "Employee Training",
-      "Soft Skills Development",
-      "Power BI",
-      "Hands-on Learning"
+      "Soft Skills Development"
     ],
     "content": [
       {
         "type": "text",
-        "value": "To support the organization's shift toward self-service analytics and data-driven decision-making, I facilitated a series of Power BI training sessions for small groups, segmented by department."
-      },
-      {
-        "type": "text",
-        "value": "<strong>Objective</storng>"
-      },
-      {
-        "type": "text",
-        "value": "The goal was to empower non-technical team members with fundamental Power BI skills, enabling them to:<br> - Understand the structure and logic of Power BI reports<br> - Navigate dashboards and interact with filters<br> - Perform basic data transformation using Power Query<br> - Create simple visualizations for their own team needs<br>This training was positioned as the first stage (Stage 1) of Power BI enablement across the company."
-      },
-      {
-        "type": "text",
-        "value": "<strong>Training Format</strong><br>Audience: Small groups (5–10 people per session) organized by department<br>Format: Hands-on workshop + live walkthrough<br>Duration: 2–3 hours per session<br>Tools used: Power BI Desktop, sample datasets, interactive exercises"
-      },
-      {
-        "type": "text",
-        "value": "<strong>My Role</strong><br>- Designed training flow and slide deck<br> - Led live demonstrations and step-by-step tutorials<br> - Tailored examples based on each department’s context<br> - Answered live questions and troubleshooted common beginner issues<br> - Followed up with support materials and links for self-paced learning"
-      },
-      {
-        "type": "text",
-        "value": "<strong>Impact</strong><br>- Helped multiple teams gain confidence in exploring and interpreting data<br> - Reduced dependency on centralized reporting teams for ad hoc data requests<br> - Established a scalable training structure for future advanced stages"
+        "value": "Analyzed real-time traffic and zone usage using IoT data and displayed results in Power BI."
       }
     ]
   },

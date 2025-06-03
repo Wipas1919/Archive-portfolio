@@ -4,13 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Data-Driven | Portfolio</title>
+  <title>Cloud Certification | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style/main.css">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
+    body { font-family: 'Inter', sans-serif; }
     .cover {
       background: linear-gradient(135deg, #141414, #4f0d0d);
       padding: 80px 20px;
@@ -82,10 +80,7 @@
       color: inherit !important;
       text-decoration: none !important;
     }
-    .dropdown-wrapper {
-      position: relative;
-      display: inline-block;
-    }
+    .dropdown-wrapper { position: relative; display: inline-block; }
     .dropbtn {
       font-weight: 600;
       cursor: pointer;
@@ -106,9 +101,7 @@
       padding: 10px 0;
       z-index: 999;
     }
-    .dropdown-wrapper:hover .dropdown-content {
-      display: block;
-    }
+    .dropdown-wrapper:hover .dropdown-content { display: block; }
     .dropdown-content a {
       display: block;
       padding: 12px 20px;
@@ -125,6 +118,7 @@
 </head>
 <body>
   <div id="page-loader"><div class="spinner"></div></div>
+
   <header>
     <div class="container">
       <h1 class="logo" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 28px; color: #fc5246;">Portfolio</h1>
@@ -146,40 +140,46 @@
       </nav>
     </div>
   </header>
+
+  <!-- Cover -->
   <section class="cover">
-    <h1>Data-Driven Portfolio</h1>
-    <p>Explore projects focused on data strategy, decision automation, and analytics at scale.</p>
+    <h1>Cloud Certification</h1>
+    <p>Verified cloud credentials showcasing proficiency in GCP, AWS, and cloud-native architectures.</p>
   </section>
+
+  <!-- Project Cards -->
   <section class="project-cards container" id="project-cards">
     <div class="card-grid" id="card-container"></div>
   </section>
+
   <script>
     const cardsContainer = document.getElementById("card-container");
-    const projectId = "strategic-data";
+    const projectId = "cloud-cert";
+
     fetch("../data/projects.json")
       .then(res => res.json())
       .then(data => {
         const p = data[projectId];
         if (!p || !p.projects?.length) {
-          cardsContainer.innerHTML = "<p>No projects found.</p>";
+          cardsContainer.innerHTML = "<p>No certifications found.</p>";
           return;
         }
-              cardsContainer.innerHTML = p.projects.map(proj => {
-        if (proj.disabled) {
-          return `
-            <div class="card disabled" aria-disabled="true">
-              <img src="${proj.image}" alt="${proj.title}" />
-              <h4>${proj.title}</h4>
-              <p>${proj.description}</p>
-            </div>`;
-        }
+          cardsContainer.innerHTML = p.projects.map(proj => {
+      if (proj.disabled) {
         return `
-          <a href="project.html?id=${proj.slug}" class="card">
+          <div class="card disabled" aria-disabled="true">
             <img src="${proj.image}" alt="${proj.title}" />
             <h4>${proj.title}</h4>
             <p>${proj.description}</p>
-          </a>`;
-      }).join("");
+          </div>`;
+      }
+      return `
+        <a href="project.html?id=${proj.slug}" class="card">
+          <img src="${proj.image}" alt="${proj.title}" />
+          <h4>${proj.title}</h4>
+          <p>${proj.description}</p>
+        </a>`;
+    }).join("");
       })
       .catch(err => {
         cardsContainer.innerHTML = "<p>Error loading data.</p>";

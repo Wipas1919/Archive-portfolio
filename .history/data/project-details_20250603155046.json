@@ -560,7 +560,7 @@
     "content": [
       {
         "type": "image",
-        "value": "/images/report-routine-01.jpg",
+        "value": "/images/report rooutine.png",
         "caption": "Example.png"
       },
       {
@@ -603,7 +603,7 @@
     ]
   },
   "bi-customer-segmentation": {
-    "title": "Smart Footfall Dashboard for Event Insight & Optimization",
+    "title": "Post-Event Analysis",
     "image": "../images/bi-customer-segmentation.png",
     "tags": [
       "Segmentation",
@@ -613,29 +613,12 @@
     "content": [
       {
         "type": "text",
-        "value": "This project showcases the development of a real-time footfall dashboard tailored for a large-scale exhibition venue. The objective was to provide a comprehensive view of visitor traffic during a multi-day international trade event, using data from various integrated sources."
-      },
-      {
-        "type": "text",
-        "value": "<strong>Objectives</strong><br>1.Enhance data accessibility for operations and decision-making<br>2.Provide near-real-time event monitoring to key stakeholders<br>3.Compare performance metrics with historical events<br>3.Compare performance metrics with historical events<br>4.Improve operational efficiency across visitor management, parking, and staffing"
-      },
-      {
-        "type": "image",
-        "value": "/images/footfall-01.png",
-        "caption": "Example.png"
-      },
-      {
-        "type": "text",
-        "value": "<strong>Features & Components</strong><br>Dashboard Modules:<br>-Visitor trends by date and time slot<br>-Entrance-based traffic heatmap<br>-Real-time parking occupancy<br>-Gender and age breakdown (via AI camera)<br>-Comparison to previous year’s event<br>Data Sources:<br>-IoT people counting sensors (hourly)<br>-AI-based CCTV analytics (every 15 minutes)<br>Event calendar metadata via public API<br>-Weather data integration<br>Automated refresh at multiple intervals throughout the day (e.g., 8 AM, 8.15 AM, 8.30 AM)"
-      },
-      {
-        "type": "text",
-        "value": "<strong>Key Challenges</strong><br>-Aligning metrics from multiple systems with different refresh rates<br>-Designing a seamless narrative through visuals to support various stakeholder needs<br>-Balancing near-real-time insights with performance (load time, responsiveness)"
+        "value": "Clustered customers using RFM metrics and behavior patterns to drive personalized marketing strategies."
       }
     ]
   },
   "bi-kpi-overview": {
-    "title": "KPI Overview",
+    "title": "Executive KPI Overview",
     "image": "../images/bi-kpi-overview.png",
     "tags": [
       "Executive",
@@ -650,79 +633,32 @@
     ]
   },
   "marketing-insight-framework": {
-    "title": "Internal Tech Talk & Workshop",
+    "title": "Marketing Insight Framework",
     "image": "../images/data-strategy-marketing.png",
     "tags": [
-      "Public Speaking",
-      "Workshop Facilitation",
-      "Employee Training",
-      "Soft Skills Development"
+      "Marketing",
+      "Data-Driven",
+      "Performance"
     ],
     "content": [
       {
-        "type": "image",
-        "value": "/images/specker-03.jpg",
-        "caption": "Example.png"
-      },
-      {
         "type": "text",
-        "value": "<strong>Technology Trends & Adaptation in the AI Era</strong><br>I had the great opportunity to serve as a co-speaker and workshop facilitator in an internal training session focused on emerging technology trends — both current innovations and those shaping the near future.<br>The session aimed to help employees understand:<br> - How technology is increasingly integrated into daily operations<br> - How to practically leverage these tools in the workplace<br> - How to practically leverage these tools in the workplace"
-      },
-      {
-        "type": "text",
-        "value": "This event was organized by the HR team and the Business Analytics department, as part of a knowledge-sharing initiative. Employees across departments were encouraged to share expertise and experiences, fostering a culture of learning and curiosity.<br>As part of this event, I:<br> - Shared my own research and insights in a digestible, engaging format<br> - Assisted in live demos to help colleagues visualize how emerging tools (especially AI-related) can be applied in real-world business scenarios<br> - Helped design a small workshop to ensure participants could interact, practice, and walk away with actionable ideas"
-      },
-      {
-        "type": "text",
-        "value": "<strong>Technology Trends & Adaptation in the AI Era</strong><br>I had the great opportunity to serve as a co-speaker and workshop facilitator in an internal training session focused on emerging technology trends — both current innovations and those shaping the near future.<br>The session aimed to help employees understand:<br> - How technology is increasingly integrated into daily operations<br> - How to practically leverage these tools in the workplace<br> - How to practically leverage these tools in the workplace<br>It was incredibly rewarding to see the enthusiasm of participants and to contribute to a workplace culture that values continuous learning and tech-forward thinking."
-      },
-      {
-        "type": "image",
-        "value": "/images/specker-01.png",
-        "caption": "Example.png"
-      },
-      {
-        "type": "image",
-        "value": "/images/specker-02.png",
-        "caption": "Example.png"
+        "value": "Built a strategic framework for analyzing marketing campaign effectiveness across platforms."
       }
     ]
   },
   "event-analytics-dashboard": {
-    "title": " Power BI Basic Training (Small Group Series)",
+    "title": "Event Analytics Dashboard",
     "image": "../images/data-strategy-event.png",
     "tags": [
-      "Public Speaking",
-      "Workshop Facilitation",
-      "Employee Training",
-      "Soft Skills Development",
-      "Power BI",
-      "Hands-on Learning"
+      "IoT",
+      "Analytics",
+      "Event"
     ],
     "content": [
       {
         "type": "text",
-        "value": "To support the organization's shift toward self-service analytics and data-driven decision-making, I facilitated a series of Power BI training sessions for small groups, segmented by department."
-      },
-      {
-        "type": "text",
-        "value": "<strong>Objective</storng>"
-      },
-      {
-        "type": "text",
-        "value": "The goal was to empower non-technical team members with fundamental Power BI skills, enabling them to:<br> - Understand the structure and logic of Power BI reports<br> - Navigate dashboards and interact with filters<br> - Perform basic data transformation using Power Query<br> - Create simple visualizations for their own team needs<br>This training was positioned as the first stage (Stage 1) of Power BI enablement across the company."
-      },
-      {
-        "type": "text",
-        "value": "<strong>Training Format</strong><br>Audience: Small groups (5–10 people per session) organized by department<br>Format: Hands-on workshop + live walkthrough<br>Duration: 2–3 hours per session<br>Tools used: Power BI Desktop, sample datasets, interactive exercises"
-      },
-      {
-        "type": "text",
-        "value": "<strong>My Role</strong><br>- Designed training flow and slide deck<br> - Led live demonstrations and step-by-step tutorials<br> - Tailored examples based on each department’s context<br> - Answered live questions and troubleshooted common beginner issues<br> - Followed up with support materials and links for self-paced learning"
-      },
-      {
-        "type": "text",
-        "value": "<strong>Impact</strong><br>- Helped multiple teams gain confidence in exploring and interpreting data<br> - Reduced dependency on centralized reporting teams for ad hoc data requests<br> - Established a scalable training structure for future advanced stages"
+        "value": "Analyzed real-time traffic and zone usage using IoT data and displayed results in Power BI."
       }
     ]
   },

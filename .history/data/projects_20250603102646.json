@@ -66,22 +66,21 @@
     "projects": [
       {
         "title": "Dashboard Routine",
-        "description": "Design a Power BI dashboard that helps with routine tasks for the marketing team.",
+        "description": "Design a Power BI dashboard that helps with routine tasks for the marketing team..",
         "image": "/images/bi-routine-1.png",
         "slug": "bi-sales-performance"
       },
       {
-        "title": "Smart Footfall Dashboard for Event Insight & Optimization",
-        "description": "Used data visualization to monitoring data when event strat.",
+        "title": "Dashboard Near-real time",
+        "description": "Used data visualization to cluster customer segments based on behavior.",
         "image": "/images/bi-routine-2.png",
         "slug": "bi-customer-segmentation"
       },
       {
-        "title": "New insights are cooking!",
-        "description": "preparing something worth the wait.",
-        "image": "/images/upcoming-cover.png",
-        "slug": "bi-kpi-overview",
-        "disabled": true
+        "title": "KPI Overview",
+        "description": "Built interactive dashboards to summarize high-level KPIs for executives.",
+        "image": "/images/bi-routine-3.png",
+        "slug": "bi-kpi-overview"
       }
     ]
   },
@@ -89,14 +88,14 @@
     "title": "Data-Driven",
     "projects": [
       {
-        "title": "Internal Tech Talk & Workshop",
+        "title": "Speaker Trend Technoligies (Asistant) ",
         "description": "Data & Technologies driven.",
         "image": "/images/bi-routine-4.jpg",
         "slug": "marketing-insight-framework"
       },
       {
         "title": "Power BI Training",
-        "description": "small group training each department.",
+        "description": "Training each department small group.",
         "image": "/images/bi-routine-5.jpg",
         "slug": "event-analytics-dashboard"
       },
