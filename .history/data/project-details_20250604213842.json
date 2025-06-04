@@ -690,7 +690,7 @@
   },
   "event-analytics-dashboard": {
     "title": " Power BI Basic Training (Small Group Series)",
-    "image": "../images/data-strategy-event.png",
+    "image": "/images/power-bi-01.png",
     "tags": [
       "Public Speaking",
       "Workshop Facilitation",
@@ -723,16 +723,6 @@
       {
         "type": "text",
         "value": "<strong>Impact</strong><br>- Helped multiple teams gain confidence in exploring and interpreting data<br> - Reduced dependency on centralized reporting teams for ad hoc data requests<br> - Established a scalable training structure for future advanced stages"
-      },
-      {
-        "type": "image",
-        "value": "/images/power-bi.png",
-        "caption": "Example.png"
-      },
-      {
-        "type": "image",
-        "value": "/images/power-bi-01.png",
-        "caption": "Example.png"
       }
     ]
   },

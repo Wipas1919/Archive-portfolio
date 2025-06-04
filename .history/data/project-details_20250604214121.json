@@ -728,11 +728,6 @@
         "type": "image",
         "value": "/images/power-bi.png",
         "caption": "Example.png"
-      },
-      {
-        "type": "image",
-        "value": "/images/power-bi-01.png",
-        "caption": "Example.png"
       }
     ]
   },
