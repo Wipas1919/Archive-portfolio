@@ -30,8 +30,8 @@
       },
       {
         "type": "text",
-        "class": "indented",
-        "value": "Upon joining this project, I encountered a significant challenge—organizational data was highly fragmented across multiple sources. The existing infrastructure lacked any centralized or automated data pipeline. Most data remained siloed within disparate systems and was primarily analyzed through manually maintained Excel files, leading to underutilization of valuable insights."
+        "class": "indent",
+        "value": "<p>Upon joining this project, I encountered a significant challenge—organizational data was highly fragmented across multiple sources. The existing infrastructure lacked any centralized or automated data pipeline. Most data remained siloed within disparate systems and was primarily analyzed through manually maintained Excel files, leading to underutilization of valuable insights.<p>"
       },
        {
         "type": "text",

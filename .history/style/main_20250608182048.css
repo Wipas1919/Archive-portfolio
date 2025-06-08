@@ -674,23 +674,9 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
   html, body{ overflow: hidden; }
 }
 
-/* <strong> ภายใน .project-blog – ปรับให้ “หนานุ่ม” แทน “หนาจัด” */
-.project-blog strong{
-  font-weight: 600;          /* จาก 800 → 600 จะยังเด่นแต่ไม่ดุเกิน */
-  font-size: clamp(1.1em,    /* เลือกขนาดยืดหยุ่นแทนค่าคงที่ 1.4em */
-                   1.15vw + .9em,
-                   1.3em);
-  color: #222;               /* โทนเทาเข้ม ลด contrast ลงเล็กน้อย */
-}
-
-/* ย่อเฉพาะเมื่อใส่ .indented */
-:root {
-  --indent-size: 2em; /* ปรับขนาดย่อหน้าได้ที่นี่ */
-}
-
-/* คลาสสำหรับย่อหน้า */
-.indent {
-  text-indent: var(--indent-size);
+.project-blog strong {
+  font-size: 1.4em;   /* 110 % ของขนาดปกติในย่อหน้านั้น */
+  font-weight: 800;
 }
 
 /* cant click card */
@@ -701,12 +687,93 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
   filter: grayscale(10%);
 }
 
-/* ===== Variables – ใส่ไว้ต้น main.css หรือตรง :root ที่มีอยู่แล้ว ===== */
-:root{
-  /* กำหนด max-width พื้นฐานของ .container */
-  --container-max: 1200px;       /* เดิม */
-  --container-pad: clamp(24px, 4vw, 64px);   /* padding ด้านข้าง */
 
-  /* ความกว้างสูงสุดของ Hero เมื่อเจอจอใหญ่ */
+
+
+
+/* =============================================================================
+   Responsive Desktop Overrides – 2025‑06‑08
+   (Appended to preserve original 690‑line stylesheet.  Changes marked [OVERRIDE])
+   – Focus: fluid container + hero scaling on desktop ≥1025px.
+   – No changes to scroll‑animation styles.
+   =============================================================================*/
+
+/* ---------- 1. Global root tokens (override / add) ------------------------- */
+:root{
+  /* [OVERRIDE] layout paddings + max widths */
+  --container-pad: clamp(24px,4vw,64px);
+  --container-max: 1200px;
   --hero-max-wide: 1600px;
+  --clr-accent: #fd3a2d;     /* ensure accent available */
+  --clr-hero-bg: #151515;
 }
+
+/* ---------- 2. Fluid container -------------------------------------------- */
+.container{
+  width:100%;
+  max-width:var(--container-max);
+  margin-inline:auto;
+  padding-inline:var(--container-pad);
+}
+
+/* Wider desktop breathe */
+@media (min-width:1280px){
+  :root{ --container-max: 1400px; }
+}
+
+/* ---------- 3. Hero section ---------------------------------------------- */
+.hero{
+  background:var(--clr-hero-bg);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  min-height:clamp(540px,70vh,820px);          /* [OVERRIDE] fluid height */
+  position:relative;
+  padding-block:clamp(64px,12vh,180px);        /* [OVERRIDE] vertical rhythm */
+}
+
+.hero .container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  align-items:center;
+  gap:clamp(32px,6vw,96px);
+  max-width:min(90%,var(--hero-max-wide));
+}
+
+.hero-text h2{
+  font-size:clamp(2.5rem,4vw + .5rem,5rem);
+  line-height:1.15;
+  margin-bottom:24px;
+}
+
+.hero-text p{
+  font-size:clamp(1rem,1.2vw + .5rem,1.5rem);
+  margin-bottom:40px;
+}
+
+/* Hero button */
+.btn{
+  display:inline-block;
+  background:var(--clr-accent);
+  color:#fff;
+  padding:14px 36px;
+  border-radius:30px;
+  font-weight:700;
+  font-size:1.125rem;
+  transition:background .3s;
+}
+.btn:hover{ background:#e12d21; }
+
+/* Lottie / illustration */
+.hero-animation lottie-player,
+.hero-animation img{
+  width:clamp(280px,35vw,560px) !important;
+  height:clamp(280px,35vw,560px) !important;
+}
+
+/* Desktop 1600+ fine‑tune */
+@media (min-width:1600px){
+  .hero .container{ max-width:min(90%, var(--hero-max-wide)); }
+}
+
+/* ----- end responsive overrides ----- */

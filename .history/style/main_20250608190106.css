@@ -546,11 +546,14 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
   margin: 80px auto;
   padding: 0 20px;
   font-family: 'Inter', sans-serif;
+  font-weight: 400;        /* 👈 เพิ่มตรงนี้: ตั้งให้เป็นน้ำหนักปกติ */
+  color: #333;             /* 👈 สีเข้มน้อยลง ไม่ใช่ดำสนิท */
 }
 
 .project-blog h1 {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
+  font-weight: 300;
   margin-bottom: 20px;
   text-align: center;
   color: #222;
@@ -684,14 +687,21 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
 }
 
 /* ย่อเฉพาะเมื่อใส่ .indented */
-:root {
-  --indent-size: 2em; /* ปรับขนาดย่อหน้าได้ที่นี่ */
+p.indented {
+  text-indent: 1.5rem;
+  margin-top: 1.2rem;
 }
 
-/* คลาสสำหรับย่อหน้า */
-.indent {
-  text-indent: var(--indent-size);
+strong, b {
+  font-weight: 100; /* จาก 700 หรือ 800 → semi-bold พอให้เด่น */
 }
+
+.project-blog p {
+  line-height: 1.75;
+  margin: 0 0 1.2rem;
+  text-align: justify;         /* กระจายให้เต็มบรรทัด ดูเป็นทางการ */
+}
+
 
 /* cant click card */
 .card.disabled {

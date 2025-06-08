@@ -30,12 +30,12 @@
       },
       {
         "type": "text",
-        "class": "indented",
+        "class": "indent",
         "value": "Upon joining this project, I encountered a significant challenge—organizational data was highly fragmented across multiple sources. The existing infrastructure lacked any centralized or automated data pipeline. Most data remained siloed within disparate systems and was primarily analyzed through manually maintained Excel files, leading to underutilization of valuable insights."
       },
        {
         "type": "text",
-        "value": "<b>At that time, the organization was just beginning to explore data-driven practices. Our data team consisted of only two members—my supervisor, who had initiated some foundational work, and myself. Given the lean team structure, I was expected not only to support but also to independently manage and understand the system from the ground up. This led me to dive into designing and implementing core data infrastructure components.<b>"
+        "value": "At that time, the organization was just beginning to explore data-driven practices. Our data team consisted of only two members—my supervisor, who had initiated some foundational work, and myself. Given the lean team structure, I was expected not only to support but also to independently manage and understand the system from the ground up. This led me to dive into designing and implementing core data infrastructure components."
       },
       {
         "type": "text",
@@ -755,71 +755,14 @@
     "title": "Chatbot Analytics Pipeline",
     "image": "../images/data-product-chatbot.png",
     "tags": [
-      "Automation Design",
-      "Web Scraping & Crawling",
-      "Prompt Engineering",
-      "Vector Database"
+      "Chatbot",
+      "ETL",
+      "Datamart"
     ],
     "content": [
       {
-        "type": "image",
-        "value": "/images/Data_Illustration.jpg",
-        "caption": "Example.png"
-      },
-      {
         "type": "text",
         "value": "AI-Powered Automation Workflow for Expo Website Support<br>Given the rapid advancement of technology—especially in the fields of Automation and AI Agents—our team, which has been focused on establishing a strong Data Infrastructure, was presented with a challenge that pushed us to develop AI solutions in parallel."
-      },
-      {
-        "type": "text",
-        "value": "One of the key implementations was an AI-powered Chat Agent integrated into the Expo Website, designed to provide users with accurate information about the event while also handling unrelated questions gracefully to ensure the best possible user experience."
-      },
-      {
-        "type": "text",
-        "value": "</strong>Tools and Technologies Used</strong><br>We chose n8n as our main tool for designing the AI automation workflow. While n8n is primarily known as an automation platform, it offers powerful API integrations that allow it to work seamlessly with external AI models such as OpenAI (ChatGPT) and Gemini, making it flexible for LLM-based applications."
-      },
-      {
-        "type": "text",
-        "value": "Before reaching this stage, we ran a Proof of Concept (PoC) to validate the feasibility of AI agents under minimal cost, leveraging local infrastructure. This included deep exploration into:<br> - The architecture and mechanisms of Large Language Models (LLMs)<br> - The principles behind Retrieval-Augmented Generation (RAG)<br> - Hands-on practice with Langchain, FAISS, and various Vector Databases"
-      },
-      {
-        "type": "text",
-        "value": "AI Agent Workflow Design"
-      },
-      {
-        "type": "text",
-        "value": "Back-End Workflow: Vectorization & Retrieval<br>On the backend, we designed the workflow as follows:<br>1.Data Preparation<br>We collected data from various sources, including databases and documents, focusing on structured and semi-structured formats (excluding audio and image files).<br>2.PII Marking & Compliance<br>All data was reviewed and processed with PII (Personally Identifiable Information) marking to ensure compliance with data protection laws such as PDPA and GDPR.<br>3.Embedding & Indexing<br>Cleaned data was transformed into vector embeddings and stored in a vector database, such as FAISS, Qdrant, or ChromaDB.<br>5.RAG Pipeline<brUpon receiving a user query, the system performs a similarity search to retrieve the most relevant content from the vector store. This content is then merged with a prompt and passed to the LLM for response generation.<br>5.Response Filtering<br>The output from the LLM is screened through a sensitive content filter to prevent inappropriate or non-compliant responses before delivering it to the user"
-      },
-      {
-        "type": "text",
-        "value": "<strong>Front-End Workflow: User Interaction & Chat Engine</strong><br>1.User Input<br>User messages are received through the Chat UI, such as a chat box or embedded web widget.<br>2.Search & Re-Rank<br>The system performs both vector-based search and keyword-based search, followed by a re-ranking process to prioritize the most relevant results.<br>3.Safety Layer<br>A filtering layer is applied to block or deny queries that are considered sensitive, inappropriate, or out of defined scope.<br>4.Contextual Response Generation<br>Relevant results retrieved via the RAG process are passed to the LLM, which generates a context-aware response tailored to the user's intent.<br>5.Output Delivery<br>The final, filtered response is returned to the user through the chat interface.<br>The initial system draft illustrated a clear separation between the **Back-End AI Pipeline** and the **Front-End Chat Layer**, allowing for easier development, scalability, and future improvements.This draft was created **prior to the decision to adopt n8n** as the primary automation tool."
-      },
-      {
-        "type": "image",
-        "value": "/images/llm.png",
-        "caption": "Example.png"
-      },
-      {
-        "type": "image",
-        "value": "/images/llm-2.png",
-        "caption": "Example.png"
-      },
-      {
-        "type": "text",
-        "value": "All of these processes were implemented entirely within n8n.<br>After the initial Proof of Concept (PoC), our team expanded the project scope to support the **Exhibition Website**, with a refined focus on:.<br> - PII filtering and strict content controls were de-emphasized, as the source data was already publicly available.<br> - In contrast, Customer Experience became a primary focus, ensuring that responses were more accurate and aligned with user intent."
-      },
-      {
-        "type": "text",
-        "value": "The website is a static web page, and we applied web crawling techniques to automatically extract content and store it in a vector database. The process included:<br>1. Web Scraping: Extracting data from static web pages<br>2. Vectorization: Converting text into vector format for semantic search<br>3. Scope Control: Restricting the response generation to data exclusively from approved sources<br>4. LLM Response Generation: Using an LLM (Gemini) to craft responses based on the retrieved content<br>This entire workflow was built using n8n Workflow Automation, with no custom backend development required. The result is a low-cost, highly flexible solution that can be quickly adapted to different business contexts."
-      },
-      {
-        "type": "image",
-        "value": "/images/llm-3.png",
-        "caption": "Example.png"
-      },
-      {
-        "type": "text",
-        "value": "Designed a Cost-Efficient AI System<br> - Planned a low-cost PoC using available local resources<br> - Built the entire automation workflow on n8n, with no need for custom backend development<br>Developed Vector-Based Search & AI Chat Agent<br> - Built an end-to-end pipeline: Web Scraping → Embedding → Vector Store → AI Response<br> - Integrated with LLM to generate context-aware answers based on retrieved data<br>Systematic & Modular Design Thinking<br> - Designed a clear separation between Back-End (data retrieval + AI logic) and Front-End (chat interface)<br> - Ensured the system can be easily scaled or modularly replaced as needed in the future"
       }
     ]
   },

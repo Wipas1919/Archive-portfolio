@@ -684,14 +684,12 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
 }
 
 /* ย่อเฉพาะเมื่อใส่ .indented */
-:root {
-  --indent-size: 2em; /* ปรับขนาดย่อหน้าได้ที่นี่ */
+p.indented {
+  text-indent: 1.5rem;
+  margin-top: 1.2rem;
 }
 
-/* คลาสสำหรับย่อหน้า */
-.indent {
-  text-indent: var(--indent-size);
-}
+
 
 /* cant click card */
 .card.disabled {

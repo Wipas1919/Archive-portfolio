@@ -30,12 +30,12 @@
       },
       {
         "type": "text",
-        "class": "indented",
+        "class": "indent",
         "value": "Upon joining this project, I encountered a significant challenge—organizational data was highly fragmented across multiple sources. The existing infrastructure lacked any centralized or automated data pipeline. Most data remained siloed within disparate systems and was primarily analyzed through manually maintained Excel files, leading to underutilization of valuable insights."
       },
        {
         "type": "text",
-        "value": "<b>At that time, the organization was just beginning to explore data-driven practices. Our data team consisted of only two members—my supervisor, who had initiated some foundational work, and myself. Given the lean team structure, I was expected not only to support but also to independently manage and understand the system from the ground up. This led me to dive into designing and implementing core data infrastructure components.<b>"
+        "value": "At that time, the organization was just beginning to explore data-driven practices. Our data team consisted of only two members—my supervisor, who had initiated some foundational work, and myself. Given the lean team structure, I was expected not only to support but also to independently manage and understand the system from the ground up. This led me to dive into designing and implementing core data infrastructure components."
       },
       {
         "type": "text",

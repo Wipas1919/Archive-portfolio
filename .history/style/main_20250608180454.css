@@ -17,11 +17,12 @@ img {
   display: block;
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 50px; /* เพิ่ม padding ด้านข้าง */
+/* ===== Container ปกติ ===== */
+.container{
+  width:100%;
+  max-width:var(--container-max);
+  margin-inline:auto;
+  padding-inline:var(--container-pad);
 }
 
 @media screen and (max-width: 767px) {
@@ -674,23 +675,9 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
   html, body{ overflow: hidden; }
 }
 
-/* <strong> ภายใน .project-blog – ปรับให้ “หนานุ่ม” แทน “หนาจัด” */
-.project-blog strong{
-  font-weight: 600;          /* จาก 800 → 600 จะยังเด่นแต่ไม่ดุเกิน */
-  font-size: clamp(1.1em,    /* เลือกขนาดยืดหยุ่นแทนค่าคงที่ 1.4em */
-                   1.15vw + .9em,
-                   1.3em);
-  color: #222;               /* โทนเทาเข้ม ลด contrast ลงเล็กน้อย */
-}
-
-/* ย่อเฉพาะเมื่อใส่ .indented */
-:root {
-  --indent-size: 2em; /* ปรับขนาดย่อหน้าได้ที่นี่ */
-}
-
-/* คลาสสำหรับย่อหน้า */
-.indent {
-  text-indent: var(--indent-size);
+.project-blog strong {
+  font-size: 1.4em;   /* 110 % ของขนาดปกติในย่อหน้านั้น */
+  font-weight: 800;
 }
 
 /* cant click card */
