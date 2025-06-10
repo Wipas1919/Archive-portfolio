@@ -307,7 +307,7 @@
       },
       {
         "type": "text",
-        "value": "<strong>3. Database & Storage Layer</strong><br>Purpose: Stores both structured and unstructured data to support downstream processing and analytics.<br>Key Tools:<br>3.1 MySQL, PostgreSQL: Relational databases for structured data<br>MinIO: Object storage for files and unstructured data"
+        "value": "<strong>3. Database & Storage Layer</strong><br>Purpose: Stores both structured and unstructured data to support downstream processing and analytics.<br>Key Tools:<br>MySQL, PostgreSQL: Relational databases for structured data<br>MinIO: Object storage for files and unstructured data"
       },
       {
         "type": "text",

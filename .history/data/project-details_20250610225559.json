@@ -303,11 +303,15 @@
       },
       {
         "type": "text",
-        "value": "<strong>2. Pipeline & Operation Layer</strong><br>Purpose: Manages the ETL/ELT workflows and operational orchestration.<br>Key Tools: <br>ㅤㅤ2.1 Windmill: Orchestrates and manages pipeline execution with built-in version rollback<br>ㅤㅤ2.2 GitLab: Used for version control (Windmill is prioritized due to native version tracking)<br>Supports scheduling and dependency management within pipelines"
+        "value": "<strong>2. Pipeline & Operation Layer</strong><br>Purpose: Manages the ETL/ELT workflows and operational orchestration.<br>Key Tools: <br>2.1 Windmill: Orchestrates and manages pipeline execution with built-in version rollback<br> 2.2 GitLab: Used for version control (Windmill is prioritized due to native version tracking)<br>Supports scheduling and dependency management within pipelines"
       },
       {
         "type": "text",
-        "value": "<strong>3. Database & Storage Layer</strong><br>Purpose: Stores both structured and unstructured data to support downstream processing and analytics.<br>Key Tools:<br>3.1 MySQL, PostgreSQL: Relational databases for structured data<br>MinIO: Object storage for files and unstructured data"
+        "value": "<strong>2. Pipeline & Operation Layer</strong><br>Purpose: Manages the ETL/ELT workflows and operational orchestration.<br>Key Tools:<br>Windmill: Orchestrates and manages pipeline execution with built-in version rollback<br> GitLab: Used for version control (Windmill is prioritized due to native version tracking)<br>Supports scheduling and dependency management within pipelines"
+      },
+      {
+        "type": "text",
+        "value": "<strong>3. Database & Storage Layer</strong><br>Purpose: Purpose:<br>Key Tools: Stores both structured and unstructured data to support downstream processing and analytics.<br>Key Tools:<br>MySQL, PostgreSQL: Relational databases for structured data<br>MinIO: Object storage for files and unstructured data"
       },
       {
         "type": "text",

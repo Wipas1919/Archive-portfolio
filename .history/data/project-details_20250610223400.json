@@ -43,7 +43,15 @@
       },
       {
         "type": "text",
-        "value": "🟩 Green: Fully integrated and available via the data mart<br>🟨 Yellow: In progress<br>⬜ Gray: Not yet available"
+        "value": "🟩 Green: Fully integrated and available via the data mart"
+      },
+      {
+        "type": "text",
+        "value": "🟨 Yellow: In progress"
+      },
+      {
+        "type": "text",
+        "value": "⬜ Gray: Not yet available"
       },
       {
         "type": "text",
@@ -59,7 +67,7 @@
       },
       {
         "type": "text",
-        "value": "This foundational work laid the groundwork for the subsequent project titled (End-to-End Data Infrastructure Planning), which formalized these efforts into a sustainable data engineering framework."
+        "value": "This foundational work laid the groundwork for the subsequent project titled [Project Name Here], which formalized these efforts into a sustainable data engineering framework."
       },
       {
         "type": "image",
@@ -181,7 +189,7 @@
       },
       {
         "type": "text",
-        "value": "ㅤㅤThese efforts were part of a broader initiative under the project \"[Data-Driven]\", designed to empower BAU (Business-As-Usual) teams to leverage BI tools effectively and reduce operational dependency on the Business Analytics team."
+        "value": "ㅤㅤThese efforts were part of a broader initiative under the project \"[Project Name Here]\", designed to empower BAU (Business-As-Usual) teams to leverage BI tools effectively and reduce operational dependency on the Business Analytics team."
       },
       {
         "type": "text",
@@ -264,7 +272,7 @@
     "content": [
        {
         "type": "text",
-        "value": "ㅤㅤThis diagram illustrates the foundational data architecture established during the initial phase of joining the MICE business, with a primary focus on Data Engineering. It outlines the planning and progressive development of key system components including the data ingestion pipeline, metadata governance, and storage layer. The visual representation also highlights how each component contributes to enabling long-term, data-driven decision-making that aligns with business goals."
+        "value": "This diagram illustrates the foundational data architecture established during the initial phase of joining the MICE business, with a primary focus on Data Engineering. It outlines the planning and progressive development of key system components including the data ingestion pipeline, metadata governance, and storage layer. The visual representation also highlights how each component contributes to enabling long-term, data-driven decision-making that aligns with business goals."
       },
       {
         "type": "note",
@@ -277,7 +285,7 @@
       },
       {
         "type": "text",
-        "value": "ㅤㅤAfter establishing the overarching project objectives, the next step involved scoping the data domain to assess the current state of data availability—identifying datasets that are available, not yet available, or in progress. This assessment serves as a foundation for prioritizing data pipelines and identifying critical data dependencies essential for analytics, governance, and downstream business applications."
+        "value": "After establishing the overarching project objectives, the next step involved scoping the data domain to assess the current state of data availability—identifying datasets that are available, not yet available, or in progress. This assessment serves as a foundation for prioritizing data pipelines and identifying critical data dependencies essential for analytics, governance, and downstream business applications."
       },
       {
         "type": "image",
@@ -286,7 +294,7 @@
       },
       {
         "type": "text",
-        "value": "<strong>System Architecture Design via Figma</strong><br>ㅤㅤWe leveraged Figma as a collaborative tool to design and iterate on the system’s data architecture. The visual-first approach allowed the Data Engineering team to clearly communicate structural concepts and data pipeline flows across the ingestion, processing, and serving layers. It also enabled cross-functional teams to better understand system interactions and actively contribute to the development process.<br>(Work-in-progress diagram)"
+        "value": "<strong>System Architecture Design via Figma</strong><br>We leveraged Figma as a collaborative tool to design and iterate on the system’s data architecture. The visual-first approach allowed the Data Engineering team to clearly communicate structural concepts and data pipeline flows across the ingestion, processing, and serving layers. It also enabled cross-functional teams to better understand system interactions and actively contribute to the development process.<br>(Work-in-progress diagram)"
       },
       {
         "type": "image",
@@ -295,7 +303,7 @@
       },
       {
         "type": "text",
-        "value": "<strong>System Scope Overview</strong><br>ㅤㅤThe current system architecture is structured into six core layers, each with clearly defined responsibilities and supporting tools. This layered approach ensures scalability, governance, and interoperability across all components of the data platform."
+        "value": "<strong>System Scope Overview</strong><br>The current system architecture is structured into six core layers, each with clearly defined responsibilities and supporting tools. This layered approach ensures scalability, governance, and interoperability across all components of the data platform."
       },
       {
         "type": "text",
@@ -303,11 +311,15 @@
       },
       {
         "type": "text",
-        "value": "<strong>2. Pipeline & Operation Layer</strong><br>Purpose: Manages the ETL/ELT workflows and operational orchestration.<br>Key Tools: <br>ㅤㅤ2.1 Windmill: Orchestrates and manages pipeline execution with built-in version rollback<br>ㅤㅤ2.2 GitLab: Used for version control (Windmill is prioritized due to native version tracking)<br>Supports scheduling and dependency management within pipelines"
+        "value": "<strong>2. Pipeline & Operation Layer</strong><br>Purpose: Manages the ETL/ELT workflows and operational orchestration.<br>Key Tools: Windmill: Orchestrates and manages pipeline execution with built-in version rollback<br> GitLab: Used for version control (Windmill is prioritized due to native version tracking)<br>Supports scheduling and dependency management within pipelines"
       },
       {
         "type": "text",
-        "value": "<strong>3. Database & Storage Layer</strong><br>Purpose: Stores both structured and unstructured data to support downstream processing and analytics.<br>Key Tools:<br>3.1 MySQL, PostgreSQL: Relational databases for structured data<br>MinIO: Object storage for files and unstructured data"
+        "value": "<strong>2. Pipeline & Operation Layer</strong><br>Purpose: Manages the ETL/ELT workflows and operational orchestration.<br>Key Tools:<br>Windmill: Orchestrates and manages pipeline execution with built-in version rollback<br> GitLab: Used for version control (Windmill is prioritized due to native version tracking)<br>Supports scheduling and dependency management within pipelines"
+      },
+      {
+        "type": "text",
+        "value": "<strong>3. Database & Storage Layer</strong><br>Purpose: Purpose:<br>Key Tools: Stores both structured and unstructured data to support downstream processing and analytics.<br>Key Tools:<br>MySQL, PostgreSQL: Relational databases for structured data<br>MinIO: Object storage for files and unstructured data"
       },
       {
         "type": "text",

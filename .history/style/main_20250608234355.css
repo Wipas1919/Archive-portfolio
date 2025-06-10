@@ -66,7 +66,7 @@ header .container {
 }
 
 .logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', serif;
   font-size: 30px;
   color: #fc5246;
 }
@@ -178,7 +178,6 @@ nav a:hover {
 .hero h2 {
   font-size: 60px;
   margin-bottom: 10px;
-  font-family: 'Poppins', sans-serif;
   line-height: 1.2;
   color: #ffffff;
 }
