@@ -148,7 +148,7 @@
       },
       {
         "type": "text",
-        "value": "Given that some source data contained Personally Identifiable Information (PII), it was essential to adhere to data privacy best practices. My approach included:<br><br>ㅤㅤ● Segregation of Sensitive Data: All PII was isolated from analytical layers<br>ㅤㅤ● Anonymization & Encoding: Sensitive attributes were transformed using techniques such as one-hot encoding, ensuring analytical utility without exposing identity<br>ㅤㅤ● Marking and Classification: Governance tags were applied for audit and policy enforcement (as part of a future expansion)"
+        "value": "Given that some source data contained Personally Identifiable Information (PII), it was essential to adhere to data privacy best practices. My approach included:<br><br>ㅤㅤ- Segregation of Sensitive Data: All PII was isolated from analytical layers<br>ㅤㅤ- Anonymization & Encoding: Sensitive attributes were transformed using techniques such as one-hot encoding, ensuring analytical utility without exposing identity<br>ㅤㅤ- Marking and Classification: Governance tags were applied for audit and policy enforcement (as part of a future expansion)"
       },
       {
         "type": "text",
@@ -156,7 +156,7 @@
       },
       {
         "type": "text",
-        "value": "Architecture & Performance Design<br>Using Windmill, I structured the transformation pipeline as modular and asynchronous flows, allowing for:<br><br>ㅤㅤ● Parallel Processing: Independent transformation blocks executed concurrently to reduce overall ETL runtime<br>ㅤㅤ● Nested Sub-flows: Each task in the flow could call sub-flows to encapsulate reusable logic (e.g., shared cleaning steps or lookups)<br>ㅤㅤ● Reduced Complexity: Visual flow diagrams improved maintainability and onboarding for new team members"
+        "value": "Architecture & Performance Design<br>Using Windmill, I structured the transformation pipeline as modular and asynchronous flows, allowing for:<br><br>ㅤㅤ- Parallel Processing: Independent transformation blocks executed concurrently to reduce overall ETL runtime<br>ㅤㅤ- Nested Sub-flows: Each task in the flow could call sub-flows to encapsulate reusable logic (e.g., shared cleaning steps or lookups)<br>ㅤㅤ- Reduced Complexity: Visual flow diagrams improved maintainability and onboarding for new team members"
       },
       {
         "type": "text",
@@ -164,7 +164,7 @@
       }      ,
       {
         "type": "text",
-        "value": "BI Integration<br>The Data Mart output served as the primary data source for Power BI dashboards, which I designed to:<br>ㅤㅤ● Simplify user experience (minimize reliance on complex DAX logic)<br>ㅤㅤ● Support drill-down, trend analysis, and KPI tracking<br>ㅤㅤ● Enable data-driven decision-making across departments"
+        "value": "BI Integration<br>The Data Mart output served as the primary data source for Power BI dashboards, which I designed to:<br>ㅤㅤ- Simplify user experience (minimize reliance on complex DAX logic)<br>ㅤㅤ- Support drill-down, trend analysis, and KPI tracking<br>ㅤㅤ- Enable data-driven decision-making across departments"
       },
       {
         "type": "text",
@@ -177,7 +177,7 @@
       },
       {
         "type": "text",
-        "value": "<strong>Phase 4: Visualization & Insight Delivery</strong><br><br>The final phase focused on enabling business users to independently access, explore, and derive value from data. This phase was separated into two core initiatives:<br><br>ㅤㅤ● Dashboard & Monitoring<br>ㅤㅤ● Reporting & Advanced Analytics"
+        "value": "<strong>Phase 4: Visualization & Insight Delivery</strong><br><br>The final phase focused on enabling business users to independently access, explore, and derive value from data. This phase was separated into two core initiatives:<br><br>- Dashboard & Monitoring<br>- Reporting & Advanced Analytics"
       },
       {
         "type": "text",
@@ -185,15 +185,15 @@
       },
       {
         "type": "text",
-        "value": "<strong>Dashboard & Monitoring</strong> <br>I connected the PostgreSQL Data Mart to Power BI, creating a suite of dashboards tailored to business needs. Key features included:<br>ㅤㅤ● Multi-dimensional analysis (daily, weekly, monthly trends)<br>ㅤㅤ● User-friendly design with clear navigation and visual cues<br>ㅤㅤ● Pre-built DAX measures for insights such as:<br>ㅤㅤ● Growth Rate comparisons<br>ㅤㅤ● Top-N performance by segment<br>ㅤㅤ● Year-over-year analysis"
+        "value": "<strong>Dashboard & Monitoring</strong> <br>I connected the PostgreSQL Data Mart to Power BI, creating a suite of dashboards tailored to business needs. Key features included:<br>ㅤㅤ- Multi-dimensional analysis (daily, weekly, monthly trends)<br>ㅤㅤ- User-friendly design with clear navigation and visual cues<br>ㅤㅤ- Pre-built DAX measures for insights such as:<br>ㅤㅤ- Growth Rate comparisons<br>ㅤㅤ- Top-N performance by segment<br>ㅤㅤ- Year-over-year analysis"
       },
       {
         "type": "text",
-        "value": "To support scalability and adoption:<br>ㅤㅤ● Dashboards were designed for low-code/no-code handoff to BAU departments<br>ㅤㅤ● Initial deployment included training and onboarding for designated users<br>ㅤㅤ● Long-term ownership was transitioned to each department, who could extend and modify dashboards based on evolving needs"
+        "value": "To support scalability and adoption:<br>ㅤㅤ- Dashboards were designed for low-code/no-code handoff to BAU departments<br>ㅤㅤ- Initial deployment included training and onboarding for designated users<br>ㅤㅤ- Long-term ownership was transitioned to each department, who could extend and modify dashboards based on evolving needs"
       },
       {
         "type": "text",
-        "value": "Reporting & Deep-Dive Analysis<br>ㅤㅤFor more complex analytical needs, especially those requiring cross-domain joins or hypothesis testing beyond available Data Mart dimensions, responsibility remained with the Business Analytics team. These “deep reports” addressed:<br>ㅤㅤ● Ad hoc strategic questions<br>ㅤㅤ● Trend anomalies<br>ㅤㅤ● Exploratory insights for decision-makers"
+        "value": "Reporting & Deep-Dive Analysis<br><br>For more complex analytical needs, especially those requiring cross-domain joins or hypothesis testing beyond available Data Mart dimensions, responsibility remained with the Business Analytics team. These “deep reports” addressed:<br><br>ㅤㅤ- Ad hoc strategic questions<br>ㅤㅤ- Trend anomalies<br>ㅤㅤ- Exploratory insights for decision-makers"
       },
       {
         "type": "text",
@@ -201,11 +201,11 @@
       },
       {
         "type": "text",
-        "value": "<strong>Governance & Access Control</strong> <br>To ensure secure and organized usage:<br>ㅤㅤ● Each department was assigned a dedicated Power BI Workspace<br>ㅤㅤ● Role-based access was enforced via permission controls aligned with the organization’s Data Catalog<br>ㅤㅤ● Sensitive dashboards and datasets were isolated as needed to comply with internal governance standards"
+        "value": "<strong>Governance & Access Control</strong> <br>To ensure secure and organized usage:<br>ㅤㅤ- Each department was assigned a dedicated Power BI Workspace<br>ㅤㅤ- Role-based access was enforced via permission controls aligned with the organization’s Data Catalog<br>ㅤㅤ- Sensitive dashboards and datasets were isolated as needed to comply with internal governance standards"
       },
       {
         "type": "text",
-        "value": "<strong>Summary</strong><br>By establishing a seamless connection from PostgreSQL to Power BI, I enabled departments to make data-driven decisions using self-service dashboards. These efforts not only improved data visibility but also:<br>ㅤㅤ● Reduced turnaround time for insights<br>ㅤㅤ● Offloaded routine reporting tasks from the analytics team<br>ㅤㅤ● Increased data literacy across business units"
+        "value": "<strong>Summary</strong><br>By establishing a seamless connection from PostgreSQL to Power BI, I enabled departments to make data-driven decisions using self-service dashboards. These efforts not only improved data visibility but also:<br>ㅤㅤ- Reduced turnaround time for insights<br>ㅤㅤ- Offloaded routine reporting tasks from the analytics team<br>ㅤㅤ- Increased data literacy across business units"
       },
       {
         "type": "text",
@@ -217,19 +217,19 @@
       },
       {
         "type": "text",
-        "value": "<strong>System Configuration & Troubleshooting</strong><br>Gained extensive experience working with Linux CLI, particularly in debugging environment setup and deployment errors.<br>ㅤㅤ● Resolved issues related to:<br>ㅤㅤ● Misconfigured `YAML` files in Windmill and Docker stacks<br>ㅤㅤ● Networking challenges within Portainer, ensuring proper container-to-container communication<br>ㅤㅤ● Port conflicts and version compatibility across multiple services"
+        "value": "<strong>System Configuration & Troubleshooting</strong><br>- Gained extensive experience working with Linux CLI, particularly in debugging environment setup and deployment errors.<br>- Resolved issues related to:<br>    - Misconfigured `YAML` files in Windmill and Docker stacks<br>    - Networking challenges within Portainer, ensuring proper container-to-container communication<br>    - Port conflicts and version compatibility across multiple services"
       },
       {
         "type": "text",
-        "value": "<strong>ETL Pipeline Debugging</strong><br>ㅤㅤ● Investigated root causes of pipeline failures across the stack:<br>ㅤㅤ● Source-side issues (e.g., data quality, schema mismatches)<br>ㅤㅤ● Credential mismanagement<br>ㅤㅤ● Execution-level errors within Windmill workflows<br>Designed alert mechanisms and fallback strategies to reduce downtime and improve recovery time"
+        "value": "<strong>ETL Pipeline Debugging</strong><br>- Investigated root causes of pipeline failures across the stack:<br>    - Source-side issues (e.g., data quality, schema mismatches)<br>    - Credential mismanagement<br>    - Execution-level errors within Windmill workflows<br>- Designed alert mechanisms and fallback strategies to reduce downtime and improve recovery time"
       },
       {
         "type": "text",
-        "value": "<strong>Query & Workflow Optimization</strong><br>Improved performance and reliability by:<br>ㅤㅤ● Optimizing complex SQL queries and Python scripts<br>ㅤㅤ● Redesigning pipeline logic to reduce memory and processing overhead<br>ㅤㅤ● Implementing batch updates, error handling, and retry mechanisms for unstable data sources"
+        "value": "<strong>Query & Workflow Optimization</strong><br>- Improved performance and reliability by:<br>    - Optimizing complex SQL queries and Python scripts<br>    - Redesigning pipeline logic to reduce memory and processing overhead<br>    - Implementing batch updates, error handling, and retry mechanisms for unstable data sources"
       },
       {
         "type": "text",
-        "value": "<strong>Business Logic Reconstruction & Data Investigation</strong><br>ㅤㅤ● Dealt with legacy datasets stored without clear documentation<br>ㅤㅤ● Conducted reverse engineering of table relationships and column semantics to rediscover business logic<br>ㅤㅤ● Collaborated with stakeholders to reconstruct transformation rules and validate data accuracy before delivering to BI tools"
+        "value": "<strong>Business Logic Reconstruction & Data Investigation</strong><br>ㅤㅤ- Dealt with legacy datasets stored without clear documentation<br>ㅤㅤ- Conducted reverse engineering of table relationships and column semantics to rediscover business logic<br>ㅤㅤ- Collaborated with stakeholders to reconstruct transformation rules and validate data accuracy before delivering to BI tools"
       },
       {
         "type": "text",
@@ -311,15 +311,15 @@
       },
       {
         "type": "text",
-        "value": "<strong>4. Tools & Application Layer</strong><br>Purpose: Purpose: Provides supporting tools for automation, analytics, and visualization.<br>Key Tools:<br>Stores both structured and unstructured data to support downstream processing and analytics.<br>Key Tools:<br>ㅤㅤ4.1 n8n: Workflow automation<br>ㅤㅤ4.2 Power BI, Google Analytics, Streamlit: Data visualization and dashboarding<br>ㅤㅤ4.3 OpenMetadata: Metadata management and lineage tracking"
+        "value": "<strong>4. Tools & Application Layer</strong><br>Purpose: Purpose: Provides supporting tools for automation, analytics, and visualization.<br>Key Tools:<br>Stores both structured and unstructured data to support downstream processing and analytics.<br>Key Tools:<br>ㅤㅤ4.1n8n: Workflow automation<br>Power BI, Google Analytics, Streamlit: Data visualization and dashboarding<br>OpenMetadata: Metadata management and lineage tracking"
       },
       {
         "type": "text",
-        "value": "<strong>5. Cloud & IoT Application Layer</strong><br>Purpose: Purpose:Collects data from external applications and IoT devices in both batch and near real-time modes.<br>Data Ingestion:<br>ㅤㅤ5.1 Data enters through pre-configured gateways and message queues, enabling seamless flow into the pipeline layer"
+        "value": "<strong>5. Cloud & IoT Application Layer</strong><br>Purpose: Purpose:Collects data from external applications and IoT devices in both batch and near real-time modes.<br>Data Ingestion:<br>Data enters through pre-configured gateways and message queues, enabling seamless flow into the pipeline layer"
       },
       {
         "type": "text",
-        "value": "<strong>6. Client & Gateway Layer</strong><br>Purpose: Purpose: Serves as the interface for end-users and services to access the platform securely.<br>nd message queues,Access Points:<br>ㅤㅤ6.1 Kong: API Gateway for external client integrations<br>ㅤㅤ6.2 Azure AD: Internal access control and authentication"
+        "value": "<strong>6. Client & Gateway Layer</strong><br>Purpose: Purpose: Serves as the interface for end-users and services to access the platform securely.<br>nd message queues,Access Points:<br>Kong: API Gateway for external client integrations<br>Azure AD: Internal access control and authentication"
       },
       {
         "type": "image",
@@ -328,27 +328,27 @@
       },
       {
         "type": "text",
-        "value": "ㅤㅤThis diagram provides an overview of the Data Platform architecture, comprising database structures, data pipelines, and storage systems designed to support both business operations and organizational analytics. The platform emphasizes scalability and is built to enable automation at the operational level."
+        "value": "This diagram provides an overview of the Data Platform architecture, comprising database structures, data pipelines, and storage systems designed to support both business operations and organizational analytics. The platform emphasizes scalability and is built to enable automation at the operational level."
       },
       {
         "type": "text",
         "title": "Database Layer",
-        "value": "<strong>Database Layer</strong><br>ㅤㅤSupports 6 data sources, including IoT systems and cloud-based applications<br> Stores a total of 18 tables in the MySQL database<br> hosting over 16 million records (approx. 4.5 GB) of structured data."
+        "value": "<strong>Database Layer</strong><br>Supports 6 data sources, including IoT systems and cloud-based applications<br> Stores a total of 18 tables in the MySQL database<br> hosting over 16 million records (approx. 4.5 GB) of structured data."
       },
       {
         "type": "text",
         "title": "Pipeline Layer",
-        "value": "<strong>Pipeline Layer</strong><br>ㅤㅤOperates with 18 automated data pipelines, supported by 12 worker instances<br> Handles an average of 4,255 scheduled jobs per day<br> Built to be scalable, enabling seamless daily data transfers and powering 10 connected dashboards."
+        "value": "<strong>Pipeline Layer</strong><br>Operates with 18 automated data pipelines, supported by 12 worker instances<br> Handles an average of 4,255 scheduled jobs per day<br> Built to be scalable, enabling seamless daily data transfers and powering 10 connected dashboards."
       },
       {
         "type": "text",
         "title": "Storage Layer",
-        "value": "<strong>Storage Layer</strong><br>ㅤㅤUtilizes MinIO for object storage, primarily for image files and raw data objects<br>Contains over 700,000 objects for machine learning purposes (~1.19 GB(~1.19 GB)<br>Includes 2 dedicated datasets used for model training and AI development"
+        "value": "<strong>Storage Layer</strong><br>Utilizes MinIO for object storage, primarily for image files and raw data objects<br>Contains over 700,000 objects for machine learning purposes (~1.19 GB(~1.19 GB)<br>Includes 2 dedicated datasets used for model training and AI development"
       },
       {
         "type": "text",
         "title": "Data Size Summary (Data at Rest)",
-        "value": "<strong>Data Size Summary (Data at Rest)</strong><br>ㅤㅤThe stored data volume provides a snapshot of the system’s current capacity, covering both structured data and object storage. This data foundation is critical for enabling advanced analytics and machine learning model development."
+        "value": "<strong>Data Size Summary (Data at Rest)</strong><br>The stored data volume provides a snapshot of the system’s current capacity, covering both structured data and object storage. This data foundation is critical for enabling advanced analytics and machine learning model development."
       },
       {
         "type": "image",
@@ -358,27 +358,27 @@
       {
         "type": "text",
         "title": "Challenges in Designing and Planning a Scalable Data Platform",
-        "value": "<strong>Challenges in Designing and Planning a Scalable Data Platform</strong><br>ㅤㅤOne of the key challenges in designing and planning a data platform is the ability to think beyond immediate requirements—ensuring seamless system interoperability, supporting future scalability, and enabling non-disruptive upgrades<br><br>To address this, the system design must consider the following core dimensions:"
+        "value": "<strong>Challenges in Designing and Planning a Scalable Data Platform</strong><br>One of the key challenges in designing and planning a data platform is the ability to think beyond immediate requirements—ensuring seamless system interoperability, supporting future scalability, and enabling non-disruptive upgrades<br><br>To address this, the system design must consider the following core dimensions:"
       },
       {
         "type": "text",
         "title": "System Compatibility",
-        "value": "<strong>System Compatibility</strong><br>ㅤㅤAll modules must be able to communicate and operate together efficiently (inter-module compatibility) Technologies should support open standards and offer easy API integrations to enable flexibility and extensibility"
+        "value": "<strong>System Compatibility</strong><br>All modules must be able to communicate and operate together efficiently (inter-module compatibility)<br>Technologies should support open standards and offer easy API integrations to enable flexibility and extensibility"
       },
       {
         "type": "text",
         "title": "Operational Security",
-        "value": "<strong>Operational Security</strong><br>ㅤㅤEmphasis on secure pipeline execution and inter-service access control<br>Implementation of clear role-based access control (RBAC) to manage permissions and minimize risks"
+        "value": "<strong>Operational Security</strong><br>Emphasis on secure pipeline execution and inter-service access control<br>Implementation of clear role-based access control (RBAC) to manage permissions and minimize risks"
       },
       {
         "type": "text",
         "title": "Configuration & System Tuning",
-        "value": "<strong>Configuration & System Tuning</strong><br>ㅤㅤThe platform must be configurable and adaptable to changing workloads<br>Support system tuning for optimal performance across ingestion, processing, and serving stages"
+        "value": "<strong>Configuration & System Tuning</strong><br>The platform must be configurable and adaptable to changing workloads<br>Support system tuning for optimal performance across ingestion, processing, and serving stages"
       },
       {
         "type": "text",
         "title": "Configuration & System Tuning",
-        "value": "<strong>End-to-End Data Security</strong><br>Data protection must be enforced at all stages:<br>ㅤㅤ● Data Ingestion: Input validation and sanitation<br>ㅤㅤ● In-Transit: Encrypted communication (e.g., TLS/SSL)<br>ㅤㅤ● At-Rest: Encrypted data storage (encryption at rest)<br>Maintain detailed audit logs and data lineage to ensure traceability and compliance"
+        "value": "<strong>End-to-End Data Security</strong><br>Data protection must be enforced at all stages:<br>-Data Ingestion: Input validation and sanitation<br>-In-Transit: Encrypted communication (e.g., TLS/SSL)<br>-At-Rest: Encrypted data storage (encryption at rest)<br>Maintain detailed audit logs and data lineage to ensure traceability and compliance"
       }
     ]
   },
@@ -394,11 +394,11 @@
     "content": [
       {
         "type": "text",
-        "value": "<strong>Data Governance Mindset & Structural Evolution</strong><br>ㅤㅤAt the early stage of building a data platform within the MICE business context, the foundational challenge centered around designing a sustainable and scalable Data Governance model that balanced security, flexibility, and business alignment."
+        "value": "<strong>Data Governance Mindset & Structural Evolution</strong><br>At the early stage of building a data platform within the MICE business context, the foundational challenge centered around designing a sustainable and scalable Data Governance model that balanced security, flexibility, and business alignment."
       },
       {
         "type": "text",
-        "value": "We explored three organizational data models before deciding on a Hybrid approach:<br>ㅤㅤ● Decentralized: Data responsibilities are scattered across departments, leading to autonomy but lack of control.<br>ㅤㅤ● Centralized: All data functions are consolidated under a central team, enabling tight governance but reducing agility.<br>ㅤㅤ● Hybrid (chosen model): Combines the strengths of both—central governance standards with decentralized execution at the business unit (BU) level."
+        "value": "We explored three organizational data models before deciding on a Hybrid approach:<br> - Decentralized: Data responsibilities are scattered across departments, leading to autonomy but lack of control.<br> - Centralized: All data functions are consolidated under a central team, enabling tight governance but reducing agility.<br> - Hybrid (chosen model): Combines the strengths of both—central governance standards with decentralized execution at the business unit (BU) level."
       },
       {
         "type": "image",
@@ -416,7 +416,7 @@
       },
       {
         "type": "text",
-        "value": "<strong>A New Organizational Mindset</strong><br>ㅤㅤImplementing hybrid data governance is not only a technical transformation — it’s a cultural shift. Key mindset shifts include:<br>ㅤㅤ● IT moves from “Support Function” to Strategic Partner for Innovation<br>ㅤㅤ● Data is not just for technical staff — everyone must become data literate <br>ㅤㅤ● Business Units own their data and drive their own outcomes, supported by tech governance"
+        "value": "<strong>A New Organizational Mindset</strong><br>Implementing hybrid data governance is not only a technical transformation — it’s a cultural shift. Key mindset shifts include:<br> - IT moves from “Support Function” to Strategic Partner for Innovation<br> - Data is not just for technical staff — everyone must become data literate <br> - Business Units own their data and drive their own outcomes, supported by tech governance"
       },
       {
         "type": "image",
@@ -430,7 +430,7 @@
       },
       {
         "type": "text",
-        "value": "<strong>Implementation: OpenMetadata as a Governance Tool</strong><br>ㅤㅤTo operationalize our hybrid governance strategy, we adopted OpenMetadata as the core tool for managing metadata, ownership, lineage, and policy enforcement<br>The implementation features included:<br>Mapping full lineage: Data Source → Table → Fields → Dashboards<br>ㅤㅤ● Assigning data owners per table/column<br>ㅤㅤ● Visualizing lineage across pipelines and reporting layers<br>ㅤㅤ● Tagging sensitive data (e.g. PII, confidential) to automate compliance workflows<br>(Screenshots of implemented OpenMetadata UI were included in the documentation.)"
+        "value": "<strong>Implementation: OpenMetadata as a Governance Tool</strong><br>To operationalize our hybrid governance strategy, we adopted OpenMetadata as the core tool for managing metadata, ownership, lineage, and policy enforcement<br> - The implementation features included:<br>Mapping full lineage: Data Source → Table → Fields → Dashboards<br> - Assigning data owners per table/column<br> - Visualizing lineage across pipelines and reporting layers<br> - Tagging sensitive data (e.g. PII, confidential) to automate compliance workflows<br>(Screenshots of implemented OpenMetadata UI were included in the documentation.)"
       },
       {
         "type": "text",
@@ -462,23 +462,23 @@
       },
       {
         "type": "text",
-        "value": "ㅤㅤIn the role of a Business Analytics professional, one of the core responsibilities is to analyze complex business issues—especially in cases where business units (BUs) lack access to deep, actionable data. Our task is to bridge this gap through structured and insightful data analysis."
+        "value": "In the role of a Business Analytics professional, one of the core responsibilities is to analyze complex business issues—especially in cases where business units (BUs) lack access to deep, actionable data. Our task is to bridge this gap through structured and insightful data analysis."
       },
       {
         "type": "text",
-        "value": "ㅤㅤIn this project, the Marketing and Sales teams encountered significant challenges during the execution of a major event. After the event concluded, they compiled relevant data and passed it on to our team for a thorough analysis, with the goal of understanding what went wrong and identifying areas for improvement. Given the urgency and importance of the matter, we committed to delivering the analysis within two weeks."
+        "value": "In this project, the Marketing and Sales teams encountered significant challenges during the execution of a major event. After the event concluded, they compiled relevant data and passed it on to our team for a thorough analysis, with the goal of understanding what went wrong and identifying areas for improvement. Given the urgency and importance of the matter, we committed to delivering the analysis within two weeks."
       },
       {
         "type": "text",
-        "value": "ㅤㅤThe first step involved exploring internal data from the Data Warehouse to assess what had occurred and uncover the root causes. However, the available internal data alone was insufficient to provide a complete picture. To address this, we expanded our scope through Cross-Domain Analysis, incorporating external public data sources to fill in the gaps and validate the initial hypotheses provided by the team."
+        "value": "The first step involved exploring internal data from the Data Warehouse to assess what had occurred and uncover the root causes. However, the available internal data alone was insufficient to provide a complete picture. To address this, we expanded our scope through Cross-Domain Analysis, incorporating external public data sources to fill in the gaps and validate the initial hypotheses provided by the team."
       },
       {
         "type": "text",
-        "value": "ㅤㅤThis analysis combined both quantitative and qualitative methods, integrating internal and external data to evaluate each issue's significance and ensure that conclusions were grounded in sound reasoning."
+        "value": "This analysis combined both quantitative and qualitative methods, integrating internal and external data to evaluate each issue's significance and ensure that conclusions were grounded in sound reasoning."
       },
       {
         "type": "text",
-        "value": "ㅤㅤThe outcome of this Post-Event Analysis became a key component in enhancing decision-making for the Marketing and Sales teams. It also set a new internal standard—demonstrating that conducting a post-event review is crucial for any high-stakes event, especially those contributing significantly to the company's revenue. This approach supports more informed planning and continuous improvement in event execution."
+        "value": "The outcome of this Post-Event Analysis became a key component in enhancing decision-making for the Marketing and Sales teams. It also set a new internal standard—demonstrating that conducting a post-event review is crucial for any high-stakes event, especially those contributing significantly to the company's revenue. This approach supports more informed planning and continuous improvement in event execution."
       },
       {
         "type": "image",
@@ -496,11 +496,11 @@
       },
       {
         "type": "text",
-        "value": "Complexity of Business and Data:<br>ㅤㅤOne of the primary challenges of this project was understanding the business context. The data involved was highly complex, and although it was possible to extract data directly from the system, it could not be used at face value. It required cross-referencing and combining with data from multiple sources to arrive at accurate and comprehensive conclusions."
+        "value": "Complexity of Business and Data:<br>One of the primary challenges of this project was understanding the business context. The data involved was highly complex, and although it was possible to extract data directly from the system, it could not be used at face value. It required cross-referencing and combining with data from multiple sources to arrive at accurate and comprehensive conclusions."
       },
       {
         "type": "text",
-        "value": "<strong>Designing Analysis for Clear Communication:</strong><br>ㅤㅤAnother key challenge was designing the analysis in a way that could be easily understood by business units (BUs), many of whom do not have a technical or data background. This required careful selection of tools, methods, and presentation techniques to ensure the insights were clear, actionable, and supportive of decision-making."
+        "value": "<strong>Designing Analysis for Clear Communication:</strong><br>Another key challenge was designing the analysis in a way that could be easily understood by business units (BUs), many of whom do not have a technical or data background. This required careful selection of tools, methods, and presentation techniques to ensure the insights were clear, actionable, and supportive of decision-making."
       }
     ]
   },
@@ -553,19 +553,19 @@
       },
       {
         "type": "text",
-        "value": "ㅤㅤAs part of the organization’s transition toward a Data-Driven approach, empowering business users to access data and independently create reports using Power BI plays a key role. This not only improves agility and decision-making but also reduces reliance on manual work. This project was driven by two main objectives:<br>ㅤㅤ1. To promote a Data-Driven Organization<br>ㅤㅤ2. To reduce FTE (Full-Time Equivalent) allocated to routine reporting tasks"
+        "value": "As part of the organization’s transition toward a Data-Driven approach, empowering business users to access data and independently create reports using Power BI plays a key role. This not only improves agility and decision-making but also reduces reliance on manual work. This project was driven by two main objectives:<br>1. To promote a Data-Driven Organization<br>2. To reduce FTE (Full-Time Equivalent) allocated to routine reporting tasks"
       },
       {
         "type": "text",
-        "value": "<strong>Project Background</strong><br>ㅤㅤThe Marketing team provided their existing manual weekly and monthly reports for review. Upon analysis, it was evident that the original reports combined multiple objectives into a single dataset, which led to confusion and inefficiencies in usage across departments."
+        "value": "<strong>Project Background</strong><br>The Marketing team provided their existing manual weekly and monthly reports for review. Upon analysis, it was evident that the original reports combined multiple objectives into a single dataset, which led to confusion and inefficiencies in usage across departments."
       },
       {
         "type": "text",
-        "value": "<strong>Approach and Framework</strong><br>ㅤㅤTo realign the report to actual needs, I adopted the 6W1H Framework (Who, What, When, Where, Why, Whom, How) to explore:<br>ㅤㅤ● Who uses this report regularly<br>ㅤㅤ● Who is involved in its creation and review- What decisions the report supports<br>ㅤㅤ● Which data points could be separated into raw vs. summary views<br>This structured discussion allowed us to redefine the reporting scope, streamline content, and tailor outputs based on specific user needs."
+        "value": "<strong>Approach and Framework</strong><br>To realign the report to actual needs, I adopted the 6W1H Framework (Who, What, When, Where, Why, Whom, How) to explore:<br>- Who uses this report regularly<br>- Who is involved in its creation and review- What decisions the report supports<br>- Which data points could be separated into raw vs. summary views<br>This structured discussion allowed us to redefine the reporting scope, streamline content, and tailor outputs based on specific user needs."
       },
       {
         "type": "text",
-        "value": "<strong>Process and Outcomes</strong><br>ㅤㅤThe restructured report was rebuilt in Power BI to serve as an executive-level dashboard, providing an interactive and real-time overview of key metrics for management. Throughout the process, I worked closely with the Marketing team through scheduled review sessions. This ensured that any misalignment could be **cross-checked and resolved immediately, allowing us to maintain accuracy and transparency without having to wait for the final delivery."
+        "value": "<strong>Process and Outcomes</strong><br>The restructured report was rebuilt in Power BI to serve as an executive-level dashboard, providing an interactive and real-time overview of key metrics for management. Throughout the process, I worked closely with the Marketing team through scheduled review sessions. This ensured that any misalignment could be **cross-checked and resolved immediately, allowing us to maintain accuracy and transparency without having to wait for the final delivery."
       },
       {
         "type": "text",
@@ -578,15 +578,15 @@
       },
       {
         "type": "text",
-        "value": "<strong>Challenges</strong><br>ㅤㅤOne of the main challenges of this project was aligning and clarifying the purpose of the original dashboard. The existing reports had overlapping objectives, which caused confusion and inefficiencies across teams.Another key challenge was **designing multiple charts** in a way that maintains narrative continuity and visual consistency, allowing stakeholders to easily interpret the data and draw insights."
+        "value": "<strong>Challenges</strong><br>One of the main challenges of this project was aligning and clarifying the purpose of the original dashboard. The existing reports had overlapping objectives, which caused confusion and inefficiencies across teams.Another key challenge was **designing multiple charts** in a way that maintains narrative continuity and visual consistency, allowing stakeholders to easily interpret the data and draw insights."
       },
       {
         "type": "text",
-        "value": "<strong>Summary of Objectives</strong><br>ㅤㅤTo Promote a Data-Driven Organization<br>After delivering the first version of the dashboard to the Marketing (MKT) team, a dedicated Power BI Workspace was created for them. This enabled the MKT team to take ownership of their dashboards, make adjustments as needed, and even build additional reports independently.As a result, the workload of the business analytics team was significantly reduced, allowing them to focus on more strategic tasks."
+        "value": "<strong>Summary of Objectives</strong><br>1. To Promote a Data-Driven Organization<br>After delivering the first version of the dashboard to the Marketing (MKT) team, a dedicated Power BI Workspace was created for them. This enabled the MKT team to take ownership of their dashboards, make adjustments as needed, and even build additional reports independently.As a result, the workload of the business analytics team was significantly reduced, allowing them to focus on more strategic tasks."
       },
       {
         "type": "text",
-        "value": "<strong>To Reduce FTE (Full-Time Equivalent) in Routine Work</strong><br>ㅤㅤThis initiative contributed to an estimated FTE cost reduction of 18,750 THB per year by automating repetitive reporting tasks previously handled manually by one staff member."
+        "value": "<strong>2. To Reduce FTE (Full-Time Equivalent) in Routine Work</strong><br>This initiative contributed to an estimated FTE cost reduction of 18,750 THB per year by automating repetitive reporting tasks previously handled manually by one staff member."
       }
     ]
   },
@@ -601,11 +601,11 @@
     "content": [
       {
         "type": "text",
-        "value": "ㅤㅤThis project showcases the development of a real-time footfall dashboard tailored for a large-scale exhibition venue. The objective was to provide a comprehensive view of visitor traffic during a multi-day international trade event, using data from various integrated sources."
+        "value": "This project showcases the development of a real-time footfall dashboard tailored for a large-scale exhibition venue. The objective was to provide a comprehensive view of visitor traffic during a multi-day international trade event, using data from various integrated sources."
       },
       {
         "type": "text",
-        "value": "<strong>Objectives</strong><br>ㅤㅤ1.Enhance data accessibility for operations and decision-making<br>ㅤㅤ2.Provide near-real-time event monitoring to key stakeholders<br>ㅤㅤ3.Compare performance metrics with historical events<br>ㅤㅤ4.Compare performance metrics with historical events<br>ㅤㅤ5.Improve operational efficiency across visitor management, parking, and staffing"
+        "value": "<strong>Objectives</strong><br>1.Enhance data accessibility for operations and decision-making<br>2.Provide near-real-time event monitoring to key stakeholders<br>3.Compare performance metrics with historical events<br>3.Compare performance metrics with historical events<br>4.Improve operational efficiency across visitor management, parking, and staffing"
       },
       {
         "type": "image",
@@ -614,11 +614,11 @@
       },
       {
         "type": "text",
-        "value": "<strong>Features & Components</strong><br>Dashboard Modules:<br>ㅤㅤ● Visitor trends by date and time slot<br>ㅤㅤ● Entrance-based traffic heatmap<br>ㅤㅤ● Real-time parking occupancy<br>ㅤㅤ● Gender and age breakdown (via AI camera)<br> ㅤㅤ● Comparison to previous year’s event<br>Data Sources:<br>ㅤㅤ● IoT people counting sensors (hourly)<br>ㅤㅤ● AI-based CCTV analytics (every 15 minutes)<br>Event calendar metadata via public API<br>ㅤㅤ● Weather data integration<br>Automated refresh at multiple intervals throughout the day (e.g., 8 AM, 8.15 AM, 8.30 AM)"
+        "value": "<strong>Features & Components</strong><br>Dashboard Modules:<br>-Visitor trends by date and time slot<br>-Entrance-based traffic heatmap<br>-Real-time parking occupancy<br>-Gender and age breakdown (via AI camera)<br>-Comparison to previous year’s event<br>Data Sources:<br>-IoT people counting sensors (hourly)<br>-AI-based CCTV analytics (every 15 minutes)<br>Event calendar metadata via public API<br>-Weather data integration<br>Automated refresh at multiple intervals throughout the day (e.g., 8 AM, 8.15 AM, 8.30 AM)"
       },
       {
         "type": "text",
-        "value": "<strong>Key Challenges</strong><br>ㅤㅤ● Aligning metrics from multiple systems with different refresh rates<br>ㅤㅤ● Designing a seamless narrative through visuals to support various stakeholder needs<br>ㅤㅤ● Balancing near-real-time insights with performance (load time, responsiveness)"
+        "value": "<strong>Key Challenges</strong><br>-Aligning metrics from multiple systems with different refresh rates<br>-Designing a seamless narrative through visuals to support various stakeholder needs<br>-Balancing near-real-time insights with performance (load time, responsiveness)"
       }
     ]
   },
@@ -654,11 +654,15 @@
       },
       {
         "type": "text",
-        "value": "<strong>Technology Trends & Adaptation in the AI Era</strong><br>ㅤㅤI had the great opportunity to serve as a co-speaker and workshop facilitator in an internal training session focused on emerging technology trends — both current innovations and those shaping the near future.<br>The session aimed to help employees understand:<br>ㅤㅤ● How technology is increasingly integrated into daily operations<br>ㅤㅤ● How to practically leverage these tools in the workplace<br>ㅤㅤ● How to practically leverage these tools in the workplace"
+        "value": "<strong>Technology Trends & Adaptation in the AI Era</strong><br>I had the great opportunity to serve as a co-speaker and workshop facilitator in an internal training session focused on emerging technology trends — both current innovations and those shaping the near future.<br>The session aimed to help employees understand:<br> - How technology is increasingly integrated into daily operations<br> - How to practically leverage these tools in the workplace<br> - How to practically leverage these tools in the workplace"
       },
       {
         "type": "text",
-        "value": "This event was organized by the HR team and the Business Analytics department, as part of a knowledge-sharing initiative. Employees across departments were encouraged to share expertise and experiences, fostering a culture of learning and curiosity.<br>As part of this event, I:<br>ㅤㅤ● Shared my own research and insights in a digestible, engaging format<br>ㅤㅤ● Assisted in live demos to help colleagues visualize how emerging tools (especially AI-related) can be applied in real-world business scenarios<br>ㅤㅤ●F Helped design a small workshop to ensure participants could interact, practice, and walk away with actionable ideas"
+        "value": "This event was organized by the HR team and the Business Analytics department, as part of a knowledge-sharing initiative. Employees across departments were encouraged to share expertise and experiences, fostering a culture of learning and curiosity.<br>As part of this event, I:<br> - Shared my own research and insights in a digestible, engaging format<br> - Assisted in live demos to help colleagues visualize how emerging tools (especially AI-related) can be applied in real-world business scenarios<br> - Helped design a small workshop to ensure participants could interact, practice, and walk away with actionable ideas"
+      },
+      {
+        "type": "text",
+        "value": "<strong>Technology Trends & Adaptation in the AI Era</strong><br>I had the great opportunity to serve as a co-speaker and workshop facilitator in an internal training session focused on emerging technology trends — both current innovations and those shaping the near future.<br>The session aimed to help employees understand:<br> - How technology is increasingly integrated into daily operations<br> - How to practically leverage these tools in the workplace<br> - How to practically leverage these tools in the workplace<br>It was incredibly rewarding to see the enthusiasm of participants and to contribute to a workplace culture that values continuous learning and tech-forward thinking."
       },
       {
         "type": "image",
@@ -686,7 +690,7 @@
     "content": [
       {
         "type": "text",
-        "value": "ㅤㅤTo support the organization's shift toward self-service analytics and data-driven decision-making, I facilitated a series of Power BI training sessions for small groups, segmented by department."
+        "value": "To support the organization's shift toward self-service analytics and data-driven decision-making, I facilitated a series of Power BI training sessions for small groups, segmented by department."
       },
       {
         "type": "text",
@@ -694,7 +698,7 @@
       },
       {
         "type": "text",
-        "value": "The goal was to empower non-technical team members with fundamental Power BI skills, enabling them to:<br>ㅤㅤ● Understand the structure and logic of Power BI reports<br>ㅤㅤ● Navigate dashboards and interact with filters<br>ㅤㅤ● Perform basic data transformation using Power Query<br>ㅤㅤ● Create simple visualizations for their own team needs<br>This training was positioned as the first stage (Stage 1) of Power BI enablement across the company."
+        "value": "The goal was to empower non-technical team members with fundamental Power BI skills, enabling them to:<br> - Understand the structure and logic of Power BI reports<br> - Navigate dashboards and interact with filters<br> - Perform basic data transformation using Power Query<br> - Create simple visualizations for their own team needs<br>This training was positioned as the first stage (Stage 1) of Power BI enablement across the company."
       },
       {
         "type": "text",
@@ -702,11 +706,11 @@
       },
       {
         "type": "text",
-        "value": "<strong>My Role</strong><br>ㅤㅤ● Designed training flow and slide deck<br>ㅤㅤ● Led live demonstrations and step-by-step tutorials<br>ㅤㅤ● Tailored examples based on each department’s context<br>ㅤㅤ● Answered live questions and troubleshooted common beginner issues<br>ㅤㅤ● Followed up with support materials and links for self-paced learning"
+        "value": "<strong>My Role</strong><br>- Designed training flow and slide deck<br> - Led live demonstrations and step-by-step tutorials<br> - Tailored examples based on each department’s context<br> - Answered live questions and troubleshooted common beginner issues<br> - Followed up with support materials and links for self-paced learning"
       },
       {
         "type": "text",
-        "value": "<strong>Impact</strong><br>ㅤㅤ● Helped multiple teams gain confidence in exploring and interpreting data<br>ㅤㅤ● Reduced dependency on centralized reporting teams for ad hoc data requests<br>ㅤㅤ● Established a scalable training structure for future advanced stages"
+        "value": "<strong>Impact</strong><br>- Helped multiple teams gain confidence in exploring and interpreting data<br> - Reduced dependency on centralized reporting teams for ad hoc data requests<br> - Established a scalable training structure for future advanced stages"
       },
       {
         "type": "image",
@@ -752,27 +756,31 @@
       },
       {
         "type": "text",
-        "value": "ㅤㅤAI-Powered Automation Workflow for Expo Website Support<br>Given the rapid advancement of technology—especially in the fields of Automation and AI Agents—our team, which has been focused on establishing a strong Data Infrastructure, was presented with a challenge that pushed us to develop AI solutions in parallel."
+        "value": "AI-Powered Automation Workflow for Expo Website Support<br>Given the rapid advancement of technology—especially in the fields of Automation and AI Agents—our team, which has been focused on establishing a strong Data Infrastructure, was presented with a challenge that pushed us to develop AI solutions in parallel."
       },
       {
         "type": "text",
-        "value": "ㅤㅤOne of the key implementations was an AI-powered Chat Agent integrated into the Expo Website, designed to provide users with accurate information about the event while also handling unrelated questions gracefully to ensure the best possible user experience."
+        "value": "One of the key implementations was an AI-powered Chat Agent integrated into the Expo Website, designed to provide users with accurate information about the event while also handling unrelated questions gracefully to ensure the best possible user experience."
       },
       {
         "type": "text",
-        "value": "<strong>Tools and Technologies Used</strong> <br>ㅤㅤWe chose n8n as our main tool for designing the AI automation workflow. While n8n is primarily known as an automation platform, it offers powerful API integrations that allow it to work seamlessly with external AI models such as OpenAI (ChatGPT) and Gemini, making it flexible for LLM-based applications."
+        "value": "</strong>Tools and Technologies Used</strong><br>We chose n8n as our main tool for designing the AI automation workflow. While n8n is primarily known as an automation platform, it offers powerful API integrations that allow it to work seamlessly with external AI models such as OpenAI (ChatGPT) and Gemini, making it flexible for LLM-based applications."
       },
       {
         "type": "text",
-        "value": "ㅤㅤBefore reaching this stage, we ran a Proof of Concept (PoC) to validate the feasibility of AI agents under minimal cost, leveraging local infrastructure. This included deep exploration into:<br>ㅤㅤ● The architecture and mechanisms of Large Language Models (LLMs)<br>ㅤㅤ● The principles behind Retrieval-Augmented Generation (RAG)<br>ㅤㅤ● Hands-on practice with Langchain, FAISS, and various Vector Databases"
+        "value": "Before reaching this stage, we ran a Proof of Concept (PoC) to validate the feasibility of AI agents under minimal cost, leveraging local infrastructure. This included deep exploration into:<br> - The architecture and mechanisms of Large Language Models (LLMs)<br> - The principles behind Retrieval-Augmented Generation (RAG)<br> - Hands-on practice with Langchain, FAISS, and various Vector Databases"
       },
       {
         "type": "text",
-        "value": "<strong>AI Agent Workflow Design</strong><br>Back-End Workflow: Vectorization & Retrieval<br>On the backend, we designed the workflow as follows:<br>ㅤㅤ1.Data Preparation<br>We collected data from various sources, including databases and documents, focusing on structured and semi-structured formats (excluding audio and image files).<br>ㅤㅤ2.PII Marking & Compliance<br>All data was reviewed and processed with PII (Personally Identifiable Information) marking to ensure compliance with data protection laws such as PDPA and GDPR.<br>ㅤㅤ3.Embedding & Indexing<br>Cleaned data was transformed into vector embeddings and stored in a vector database, such as FAISS, Qdrant, or ChromaDB.<br>ㅤㅤ4.RAG Pipeline<brUpon receiving a user query, the system performs a similarity search to retrieve the most relevant content from the vector store. This content is then merged with a prompt and passed to the LLM for response generation.<br>5.Response Filtering<br>The output from the LLM is screened through a sensitive content filter to prevent inappropriate or non-compliant responses before delivering it to the user"
+        "value": "AI Agent Workflow Design"
       },
       {
         "type": "text",
-        "value": "<strong>Front-End Workflow: User Interaction & Chat Engine</strong><br>ㅤㅤ1.User Input<br>User messages are received through the Chat UI, such as a chat box or embedded web widget.<br>ㅤㅤ2.Search & Re-Rank<br>The system performs both vector-based search and keyword-based search, followed by a re-ranking process to prioritize the most relevant results.<br>ㅤㅤ3.Safety Layer<br>A filtering layer is applied to block or deny queries that are considered sensitive, inappropriate, or out of defined scope.<br>ㅤㅤ4.Contextual Response Generation<br>Relevant results retrieved via the RAG process are passed to the LLM, which generates a context-aware response tailored to the user's intent.<br>ㅤㅤ5.Output Delivery<br>The final, filtered response is returned to the user through the chat interface.<br>The initial system draft illustrated a clear separation between the Back-End AI Pipeline and the Front-End Chat Layer, allowing for easier development, scalability, and future improvements.This draft was created prior to the decision to adopt n8n as the primary automation tool."
+        "value": "Back-End Workflow: Vectorization & Retrieval<br>On the backend, we designed the workflow as follows:<br>1.Data Preparation<br>We collected data from various sources, including databases and documents, focusing on structured and semi-structured formats (excluding audio and image files).<br>2.PII Marking & Compliance<br>All data was reviewed and processed with PII (Personally Identifiable Information) marking to ensure compliance with data protection laws such as PDPA and GDPR.<br>3.Embedding & Indexing<br>Cleaned data was transformed into vector embeddings and stored in a vector database, such as FAISS, Qdrant, or ChromaDB.<br>5.RAG Pipeline<brUpon receiving a user query, the system performs a similarity search to retrieve the most relevant content from the vector store. This content is then merged with a prompt and passed to the LLM for response generation.<br>5.Response Filtering<br>The output from the LLM is screened through a sensitive content filter to prevent inappropriate or non-compliant responses before delivering it to the user"
+      },
+      {
+        "type": "text",
+        "value": "<strong>Front-End Workflow: User Interaction & Chat Engine</strong><br>1.User Input<br>User messages are received through the Chat UI, such as a chat box or embedded web widget.<br>2.Search & Re-Rank<br>The system performs both vector-based search and keyword-based search, followed by a re-ranking process to prioritize the most relevant results.<br>3.Safety Layer<br>A filtering layer is applied to block or deny queries that are considered sensitive, inappropriate, or out of defined scope.<br>4.Contextual Response Generation<br>Relevant results retrieved via the RAG process are passed to the LLM, which generates a context-aware response tailored to the user's intent.<br>5.Output Delivery<br>The final, filtered response is returned to the user through the chat interface.<br>The initial system draft illustrated a clear separation between the **Back-End AI Pipeline** and the **Front-End Chat Layer**, allowing for easier development, scalability, and future improvements.This draft was created **prior to the decision to adopt n8n** as the primary automation tool."
       },
       {
         "type": "image",
@@ -786,11 +794,11 @@
       },
       {
         "type": "text",
-        "value": "ㅤㅤAll of these processes were implemented entirely within n8n.<br>After the initial Proof of Concept (PoC), our team expanded the project scope to support the Exhibition Website, with a refined focus on:.<br>ㅤㅤ● PII filtering and strict content controls were de-emphasized, as the source data was already publicly available.<br>ㅤㅤ● In contrast, Customer Experience became a primary focus, ensuring that responses were more accurate and aligned with user intent."
+        "value": "All of these processes were implemented entirely within n8n.<br>After the initial Proof of Concept (PoC), our team expanded the project scope to support the **Exhibition Website**, with a refined focus on:.<br> - PII filtering and strict content controls were de-emphasized, as the source data was already publicly available.<br> - In contrast, Customer Experience became a primary focus, ensuring that responses were more accurate and aligned with user intent."
       },
       {
         "type": "text",
-        "value": "The website is a static web page, and we applied web crawling techniques to automatically extract content and store it in a vector database. The process included:<br>ㅤㅤ1. Web Scraping: Extracting data from static web pages<br>ㅤㅤ2. Vectorization: Converting text into vector format for semantic search<br>ㅤㅤ3. Scope Control: Restricting the response generation to data exclusively from approved sources<br>ㅤㅤ4. LLM Response Generation: Using an LLM (Gemini) to craft responses based on the retrieved content<br>This entire workflow was built using n8n Workflow Automation, with no custom backend development required. The result is a low-cost, highly flexible solution that can be quickly adapted to different business contexts."
+        "value": "The website is a static web page, and we applied web crawling techniques to automatically extract content and store it in a vector database. The process included:<br>1. Web Scraping: Extracting data from static web pages<br>2. Vectorization: Converting text into vector format for semantic search<br>3. Scope Control: Restricting the response generation to data exclusively from approved sources<br>4. LLM Response Generation: Using an LLM (Gemini) to craft responses based on the retrieved content<br>This entire workflow was built using n8n Workflow Automation, with no custom backend development required. The result is a low-cost, highly flexible solution that can be quickly adapted to different business contexts."
       },
       {
         "type": "image",
@@ -799,7 +807,7 @@
       },
       {
         "type": "text",
-        "value": "Designed a Cost-Efficient AI System<br>ㅤㅤ● Planned a low-cost PoC using available local resources<br>ㅤㅤ● Built the entire automation workflow on n8n, with no need for custom backend development<br>Developed Vector-Based Search & AI Chat Agent<br>ㅤㅤ● Built an end-to-end pipeline: Web Scraping → Embedding → Vector Store → AI Response<br>ㅤㅤ● Integrated with LLM to generate context-aware answers based on retrieved data<br>Systematic & Modular Design Thinking<br>ㅤㅤ● Designed a clear separation between Back-End (data retrieval + AI logic) and Front-End (chat interface)<br>ㅤㅤ● Ensured the system can be easily scaled or modularly replaced as needed in the future"
+        "value": "Designed a Cost-Efficient AI System<br> - Planned a low-cost PoC using available local resources<br> - Built the entire automation workflow on n8n, with no need for custom backend development<br>Developed Vector-Based Search & AI Chat Agent<br> - Built an end-to-end pipeline: Web Scraping → Embedding → Vector Store → AI Response<br> - Integrated with LLM to generate context-aware answers based on retrieved data<br>Systematic & Modular Design Thinking<br> - Designed a clear separation between Back-End (data retrieval + AI logic) and Front-End (chat interface)<br> - Ensured the system can be easily scaled or modularly replaced as needed in the future"
       }
     ]
   },

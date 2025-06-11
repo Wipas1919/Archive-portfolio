@@ -229,7 +229,7 @@
       },
       {
         "type": "text",
-        "value": "<strong>Business Logic Reconstruction & Data Investigation</strong><br>ㅤㅤ● Dealt with legacy datasets stored without clear documentation<br>ㅤㅤ● Conducted reverse engineering of table relationships and column semantics to rediscover business logic<br>ㅤㅤ● Collaborated with stakeholders to reconstruct transformation rules and validate data accuracy before delivering to BI tools"
+        "value": "<strong>Business Logic Reconstruction & Data Investigation</strong><br>ㅤㅤ- Dealt with legacy datasets stored without clear documentation<br>ㅤㅤ- Conducted reverse engineering of table relationships and column semantics to rediscover business logic<br>ㅤㅤ- Collaborated with stakeholders to reconstruct transformation rules and validate data accuracy before delivering to BI tools"
       },
       {
         "type": "text",

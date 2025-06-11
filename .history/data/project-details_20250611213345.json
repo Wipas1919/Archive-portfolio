@@ -201,11 +201,11 @@
       },
       {
         "type": "text",
-        "value": "<strong>Governance & Access Control</strong> <br>To ensure secure and organized usage:<br>ㅤㅤ● Each department was assigned a dedicated Power BI Workspace<br>ㅤㅤ● Role-based access was enforced via permission controls aligned with the organization’s Data Catalog<br>ㅤㅤ● Sensitive dashboards and datasets were isolated as needed to comply with internal governance standards"
+        "value": "<strong>Governance & Access Control</strong> <br>To ensure secure and organized usage:<br>ㅤㅤ- Each department was assigned a dedicated Power BI Workspace<br>ㅤㅤ- Role-based access was enforced via permission controls aligned with the organization’s Data Catalog<br>ㅤㅤ- Sensitive dashboards and datasets were isolated as needed to comply with internal governance standards"
       },
       {
         "type": "text",
-        "value": "<strong>Summary</strong><br>By establishing a seamless connection from PostgreSQL to Power BI, I enabled departments to make data-driven decisions using self-service dashboards. These efforts not only improved data visibility but also:<br>ㅤㅤ● Reduced turnaround time for insights<br>ㅤㅤ● Offloaded routine reporting tasks from the analytics team<br>ㅤㅤ● Increased data literacy across business units"
+        "value": "<strong>Summary</strong><br>By establishing a seamless connection from PostgreSQL to Power BI, I enabled departments to make data-driven decisions using self-service dashboards. These efforts not only improved data visibility but also:<br>ㅤㅤ- Reduced turnaround time for insights<br>ㅤㅤ- Offloaded routine reporting tasks from the analytics team<br>ㅤㅤ- Increased data literacy across business units"
       },
       {
         "type": "text",
@@ -217,19 +217,19 @@
       },
       {
         "type": "text",
-        "value": "<strong>System Configuration & Troubleshooting</strong><br>Gained extensive experience working with Linux CLI, particularly in debugging environment setup and deployment errors.<br>ㅤㅤ● Resolved issues related to:<br>ㅤㅤ● Misconfigured `YAML` files in Windmill and Docker stacks<br>ㅤㅤ● Networking challenges within Portainer, ensuring proper container-to-container communication<br>ㅤㅤ● Port conflicts and version compatibility across multiple services"
+        "value": "<strong>System Configuration & Troubleshooting</strong><br>- Gained extensive experience working with Linux CLI, particularly in debugging environment setup and deployment errors.<br>ㅤㅤ● Resolved issues related to:<br>ㅤㅤ● Misconfigured `YAML` files in Windmill and Docker stacks<br>ㅤㅤ● Networking challenges within Portainer, ensuring proper container-to-container communication<br>ㅤㅤ● Port conflicts and version compatibility across multiple services"
       },
       {
         "type": "text",
-        "value": "<strong>ETL Pipeline Debugging</strong><br>ㅤㅤ● Investigated root causes of pipeline failures across the stack:<br>ㅤㅤ● Source-side issues (e.g., data quality, schema mismatches)<br>ㅤㅤ● Credential mismanagement<br>ㅤㅤ● Execution-level errors within Windmill workflows<br>Designed alert mechanisms and fallback strategies to reduce downtime and improve recovery time"
+        "value": "<strong>ETL Pipeline Debugging</strong><br>ㅤㅤ● Investigated root causes of pipeline failures across the stack:<br>ㅤㅤ● Source-side issues (e.g., data quality, schema mismatches)<br>ㅤㅤ● Credential mismanagement<br>ㅤㅤ● Execution-level errors within Windmill workflows<br>- Designed alert mechanisms and fallback strategies to reduce downtime and improve recovery time"
       },
       {
         "type": "text",
-        "value": "<strong>Query & Workflow Optimization</strong><br>Improved performance and reliability by:<br>ㅤㅤ● Optimizing complex SQL queries and Python scripts<br>ㅤㅤ● Redesigning pipeline logic to reduce memory and processing overhead<br>ㅤㅤ● Implementing batch updates, error handling, and retry mechanisms for unstable data sources"
+        "value": "<strong>Query & Workflow Optimization</strong><br>- Improved performance and reliability by:<br>ㅤㅤ● Optimizing complex SQL queries and Python scripts<br>ㅤㅤ● Redesigning pipeline logic to reduce memory and processing overhead<br>ㅤㅤ● Implementing batch updates, error handling, and retry mechanisms for unstable data sources"
       },
       {
         "type": "text",
-        "value": "<strong>Business Logic Reconstruction & Data Investigation</strong><br>ㅤㅤ● Dealt with legacy datasets stored without clear documentation<br>ㅤㅤ● Conducted reverse engineering of table relationships and column semantics to rediscover business logic<br>ㅤㅤ● Collaborated with stakeholders to reconstruct transformation rules and validate data accuracy before delivering to BI tools"
+        "value": "<strong>Business Logic Reconstruction & Data Investigation</strong><br>ㅤㅤ- Dealt with legacy datasets stored without clear documentation<br>ㅤㅤ- Conducted reverse engineering of table relationships and column semantics to rediscover business logic<br>ㅤㅤ- Collaborated with stakeholders to reconstruct transformation rules and validate data accuracy before delivering to BI tools"
       },
       {
         "type": "text",
