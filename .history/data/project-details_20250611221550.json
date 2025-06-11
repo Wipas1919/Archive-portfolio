@@ -580,7 +580,7 @@
       },
       {
         "type": "text",
-        "value": "<strong>Process and Outcomes</strong><br>ㅤㅤThe restructured report was rebuilt in Power BI to serve as an executive-level dashboard, providing an interactive and real-time overview of key metrics for management. Throughout the process, I worked closely with the Marketing team through scheduled review sessions. This ensured that any misalignment could be cross-checked and resolved immediately, allowing us to maintain accuracy and transparency without having to wait for the final delivery."
+        "value": "<strong>Process and Outcomes</strong><br>ㅤㅤThe restructured report was rebuilt in Power BI to serve as an executive-level dashboard, providing an interactive and real-time overview of key metrics for management. Throughout the process, I worked closely with the Marketing team through scheduled review sessions. This ensured that any misalignment could be **cross-checked and resolved immediately, allowing us to maintain accuracy and transparency without having to wait for the final delivery."
       },
       {
         "type": "text",
@@ -593,11 +593,15 @@
       },
       {
         "type": "text",
-        "value": "<strong>Challenges</strong><br>ㅤㅤOne of the main challenges of this project was aligning and clarifying the purpose of the original dashboard. The existing reports had overlapping objectives, which caused confusion and inefficiencies across teams.Another key challenge was designing multiple charts in a way that maintains narrative continuity and visual consistency, allowing stakeholders to easily interpret the data and draw insights."
+        "value": "<strong>Challenges</strong><br>ㅤㅤOne of the main challenges of this project was aligning and clarifying the purpose of the original dashboard. The existing reports had overlapping objectives, which caused confusion and inefficiencies across teams.Another key challenge was **designing multiple charts** in a way that maintains narrative continuity and visual consistency, allowing stakeholders to easily interpret the data and draw insights."
       },
       {
         "type": "text",
         "value": "<strong>Summary of Objectives</strong><br>ㅤㅤTo Promote a Data-Driven Organization<br>After delivering the first version of the dashboard to the Marketing (MKT) team, a dedicated Power BI Workspace was created for them. This enabled the MKT team to take ownership of their dashboards, make adjustments as needed, and even build additional reports independently.As a result, the workload of the business analytics team was significantly reduced, allowing them to focus on more strategic tasks."
+      },
+      {
+        "type": "text",
+        "value": "<strong>To Reduce FTE (Full-Time Equivalent) in Routine Work</strong><br>ㅤㅤThis initiative contributed to an estimated FTE cost reduction of 18,750 THB per year by automating repetitive reporting tasks previously handled manually by one staff member."
       }
     ]
   },
