@@ -1,7 +1,7 @@
 {
   "End-to-End Data Engineering Journey": {
     "title": "End-to-End Data Engineering Journey",
-    "image": "/images/data-en-2.jpg",
+    "image": "..",
     "tags": [
       "Python",
       "SQL",
@@ -19,6 +19,11 @@
       "Server Setup"
     ],
     "content": [
+      {
+        "type": "image",
+        "value": "/images/data-en-2.jpg",
+        "caption": "Domain"
+      },
       {
         "type": "text",
         "value": "<strong>Background & Motivation</strong>"
@@ -645,7 +650,7 @@
   },
   "marketing-insight-framework": {
     "title": "Internal Tech Talk & Workshop",
-    "image": "/images/specker-03.jpg",
+    "image": "../images/data-strategy-marketing.png",
     "tags": [
       "Public Speaking",
       "Workshop Facilitation",
@@ -654,12 +659,17 @@
     ],
     "content": [
       {
+        "type": "image",
+        "value": "/images/specker-03.jpg",
+        "caption": "Example.png"
+      },
+      {
         "type": "text",
         "value": "<strong>Technology Trends & Adaptation in the AI Era</strong><br>ㅤㅤI had the great opportunity to serve as a co-speaker and workshop facilitator in an internal training session focused on emerging technology trends — both current innovations and those shaping the near future.<br>The session aimed to help employees understand:<br>ㅤㅤ● How technology is increasingly integrated into daily operations<br>ㅤㅤ● How to practically leverage these tools in the workplace<br>ㅤㅤ● How to practically leverage these tools in the workplace"
       },
       {
         "type": "text",
-        "value": "This event was organized by the HR team and the Business Analytics department, as part of a knowledge-sharing initiative. Employees across departments were encouraged to share expertise and experiences, fostering a culture of learning and curiosity.<br>As part of this event, I:<br>ㅤㅤ● Shared my own research and insights in a digestible, engaging format<br>ㅤㅤ● Assisted in live demos to help colleagues visualize how emerging tools (especially AI-related) can be applied in real-world business scenarios<br>ㅤㅤ● Helped design a small workshop to ensure participants could interact, practice, and walk away with actionable ideas"
+        "value": "This event was organized by the HR team and the Business Analytics department, as part of a knowledge-sharing initiative. Employees across departments were encouraged to share expertise and experiences, fostering a culture of learning and curiosity.<br>As part of this event, I:<br>ㅤㅤ● Shared my own research and insights in a digestible, engaging format<br>ㅤㅤ● Assisted in live demos to help colleagues visualize how emerging tools (especially AI-related) can be applied in real-world business scenarios<br>ㅤㅤ●F Helped design a small workshop to ensure participants could interact, practice, and walk away with actionable ideas"
       },
       {
         "type": "image",

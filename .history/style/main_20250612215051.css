@@ -1,7 +1,7 @@
 /* ตั้งค่าพื้นฐาน */
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #ffffff;
   color: #292929;
   line-height: 1.6;
@@ -66,7 +66,7 @@ header .container {
 }
 
 .logo {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
   color: #fc5246;
 }
@@ -178,7 +178,7 @@ nav a:hover {
 .hero h2 {
   font-size: 60px;
   margin-bottom: 10px;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.2;
   color: #ffffff;
 }
@@ -600,7 +600,7 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
   cursor: pointer;
   z-index: 9999;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   transition: background 0.3s ease;
   width: auto;       /* ปรับให้ขนาดพอดีกับเนื้อหา */
   max-width: 200px;  /* จำกัดไม่ให้ปุ่มกว้างเกินไป */
@@ -658,7 +658,7 @@ body.fade-out{opacity:0;transition:opacity .0.5s ease;}
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     line-height: 1.4;
     text-align: center;
