@@ -244,7 +244,7 @@
       }
     ]
   },
-  "End-to-End Data Infrastructure Planning": {
+  "End-to-End Data Infrastructure Planning"e: {
     "title": "End-to-End Data Infrastructure Design",
     "image": "/images/data-foundamatal-01.jpg",
     "tags": [
@@ -675,7 +675,7 @@
   },
   "event-analytics-dashboard": {
     "title": " Power BI Basic Training (Small Group Series)",
-    "image": "/images/cover-training.jpg",
+    "image": "images/cover-training.jpg",
     "tags": [
       "Public Speaking",
       "Workshop Facilitation",
