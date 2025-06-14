@@ -737,7 +737,7 @@
     ]
   },
   "chatbot-analytics-pipeline": {
-    "title": "Chat AI (DEMO)",
+    "title": "Chatbot Analytics Pipeline",
     "image": "../images/data-product-chatbot.png",
     "tags": [
       "Automation Design",
